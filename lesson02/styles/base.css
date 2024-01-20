@@ -25,7 +25,6 @@ main {
     max-width: 767px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(1fr);
     gap: 20px;
 }
 
