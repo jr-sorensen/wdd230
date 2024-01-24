@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap);
 
-
+/* Base Styles */
 body {
     font-family: 'Raleway', sans-serif;
     border: 1px solid #ccc;
@@ -24,7 +24,6 @@ header img {
     margin-top: 50px;
 }
 
-
 h1 {
     display: inline-block;
     vertical-align: middle;
@@ -47,6 +46,7 @@ nav ul {
     background-color: #05502f;
     padding: 10px;
 }
+
 nav li {
     margin: 10px;
     text-align: center;
@@ -64,8 +64,8 @@ nav li {
     margin: 10px 0;
     text-align: left;
     font-size: 10pt;
-
 }
+
 nav a {
     text-decoration: none;
     color: white;
@@ -93,38 +93,3 @@ footer {
     padding: 10px;
 }
 
-
-@media screen and (max-width: 600px) {
-    header img {
-        height: 100px; 
-        margin-top: 20px; 
-    }
-
-    h1 {
-        font-size: 20pt;
-        padding-bottom: 40px; 
-    }
-
-    nav ul {
-        flex-direction: column; 
-        justify-content: center;
-        align-items: center;
-    }
-
-    nav li {
-        margin: 5px; 
-        border-radius: 0; 
-    }
-
-    main {
-        padding: 5px;
-    }
-
-    .card h3 {
-        background-color: rgb(215, 193, 150);
-    }
-
-    .card li {
-        font-size: 8pt;
-    }
-}

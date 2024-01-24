@@ -10,4 +10,11 @@
         grid-column: span 2;
         text-align: center;
     }
+    .hamburger-menu {
+        display: none; 
+    }
+    nav ul {
+        display: flex; 
+    }
+
 }

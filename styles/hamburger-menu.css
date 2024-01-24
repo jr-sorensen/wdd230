@@ -1,0 +1,31 @@
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+
+.mobile-menu {
+    display: none;
+    background-color: #153c2c;
+    position: absolute;
+   bottom: 60px; 
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.mobile-menu a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.mobile-menu.show-menu {
+    display: block;
+}
