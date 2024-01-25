@@ -1,3 +1,4 @@
+/* Combined Media Query for Screens > 600px */
 @media screen and (min-width: 600px) {
     main {
         display: grid;
@@ -10,11 +11,41 @@
         grid-column: span 2;
         text-align: center;
     }
+
     .hamburger-menu {
         display: none; 
     }
+
     nav ul {
         display: flex; 
     }
 
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav.main-menu {
+        display: inline-block;
+    }
+
+    main {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+        text-align: center;
+    }
 }
+
