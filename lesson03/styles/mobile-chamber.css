@@ -1,0 +1,25 @@
+/* mobile-chamber.css */
+
+@media screen and (max-width: 600px) {
+    body {
+      padding: 2em; 
+    }
+  
+    h1, h2, h3, h4, h5, h6 {
+      font-size: 1.5em;
+    }
+  
+    nav {
+      flex-direction: column;
+    }
+  
+    nav a {
+      min-width: auto; 
+    }
+  
+    .sitemap {
+      grid-template-columns: 1fr; 
+      grid-template-areas: "ch-about" "ch-news" "ch-services" "ch-contact";
+    }
+  }
+  

@@ -1,0 +1,75 @@
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, div {
+    margin: 0;
+  }
+  
+
+  body, h1, h2, h3, h4, h5, h6, p, div {
+    padding: 0;
+  }
+  
+ 
+  body {
+    line-height: 1;
+  }
+  
+ 
+  ul, ol {
+    list-style: none;
+  }
+  
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+  }
+  
+  
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+  }
+  
+ 
+  body {
+    margin: 0;
+  }
+  
+ 
+  input, button, select, textarea {
+    font: inherit;
+  }
+  
+
+  html {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: visible;
+  }
+  
+
+  a {
+    background-color: transparent;
+  }
+  
+ 
+  a {
+    text-decoration: none;
+  }
+  
+  
+  a:visited {
+    color: inherit;
+  }
+  
+
+  strong {
+    font-weight: bolder;
+  }
+  
