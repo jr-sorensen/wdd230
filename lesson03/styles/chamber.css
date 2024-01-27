@@ -158,3 +158,47 @@
   .ch-contact {
     grid-area: ch-contact;
   }
+
+  .scenario {
+    grid-template-columns: repeat(1fr);
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 2em;
+}
+
+.scenario h4 {
+    color: var(--accent1-color);
+}
+
+.scenario p {
+    margin-bottom: 5px;
+}
+
+.scenario ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.scenario ul li::before {
+    content: '\2022'; 
+    color: var(--accent1-color); 
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.scenario ul li {
+    margin-left: 1em;
+}
+
+.scenario ul + p {
+    margin-top: 5px;
+}
+
+
+.scenario h4,
+.scenario ul,
+.scenario p {
+    margin-bottom: 5px;
+}
