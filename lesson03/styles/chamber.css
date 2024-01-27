@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&family=Nunito&display=swap');
 
 :root {
-    --primary-color:  #023047;
+    --primary-color: #023047;
     --secondary-color: #FB8500;
-    --accent1-color:#219EBC;
+    --accent1-color: #219EBC;
     --accent2-color: #FFB703;
     --accent3-color: #8ECAE6;
-    --accent4-color: #FFFFFF;
+    --accent4-color: white; 
     --heading-font: 'Cabin', sans-serif;
     --paragraph-font: 'Nunito', sans-serif;
     --headline-color-on-white: #219EBC;
@@ -18,148 +18,170 @@
     --nav-background-color: #023047;
     --nav-hover-link-color: #FFFFFF;
     --nav-hover-background-color: #FB8500;
-  }
+}
 
-  body {
+body {
     max-width: 960px;
     margin: 0 auto;
     padding: 4em;
     font-size: 18px;
     text-align: center;
-  }
+}
 
-  img {
+img {
     display: block;
     margin: 0 auto;
     max-width: 300px;
-  }
+}
 
-  h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--headline-color-on-white);
-  }
+}
 
-  h2 {
+h2 {
     text-align: center;
-  }
+}
 
-  hr {
+hr {
     height: 3px;
     margin: 35px 0;
     background: var(--accent1-color);
-  }
+}
 
-  header {
+header {
     padding: 1em;
     text-align: center;
     color: var(--paragraph-color-on-color);
     background-color: var(--paragraph-background-color);
-  }
+}
 
-  header > h1, header > h2 {
+header > h1, header > h2 {
     color: var(--headline-color-on-color);
-  }
+}
 
-  p {
+p {
     font-family: var(--paragraph-font);
     color: var(--paragraph-color);
     padding: 1em;
-  }
+}
 
-  .colors {
+.colors {
     width: 100%;
     min-width: 350px;
     margin: 30px auto;
     text-align: center;
-  }
+}
 
-  .colors th {
+.colors th {
     background-color: #999;
-  }
+    padding: 10px; /* Added padding */
+}
 
-  .colors td {
-    width: 25%;
+.colors td {
+    width: 12.5%; 
     height: 3em;
-  }
+    position: relative;
+}
 
-  .primary {
+.colors .accent4 { 
+    color: black;
+}
+
+.color-value {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--accent4-color);
+}
+
+.primary {
     background-color: var(--primary-color);
-  }
+}
 
-  .secondary {
+.secondary {
     background-color: var(--secondary-color);
-  }
+}
 
-  .accent1 {
+.accent1 {
     background-color: var(--accent1-color);
-  }
+}
 
-  .accent2 {
+.accent2 {
     background-color: var(--accent2-color);
-  }
+}
 
-  p.colored {
+.accent3 {
+    background-color: var(--accent3-color);
+}
+
+.accent4 {
+    background-color: var(--accent4-color);
+    color: black;
+}
+p.colored {
     background-color: var(--paragraph-background-color);
     color: var(--paragraph-color-on-color);
-  }
+}
 
-  nav {
+nav {
     background-color: var(--nav-background-color);
     line-height: 3em;
     text-align: center;
     font-size: 1.2em;
-  }
+}
 
-  nav {
+nav {
     list-style-type: none;
     display: flex;
-  }
+}
 
-  nav a {
+nav a {
     padding: 1em;
     min-width: 120px;
     text-decoration: none;
     padding: 10px;
-  }
+}
 
-  nav a:link, nav a:visited {
+nav a:link, nav a:visited {
     color: var(--nav-link-color);
-  }
+}
 
-  nav a:hover {
+nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
-  }
+}
 
-  .sitemap {
+.sitemap {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 3em;
     grid-template-areas: "ch-about ch-news ch-services ch-contact";
-  }
+}
 
-  .sitemap > div {
+.sitemap > div {
     text-align: center;
-  }
+}
 
-  .ch-about {
+.ch-about {
     grid-area: ch-about;
-  }
+}
 
-  .ch-news {
+.ch-news {
     grid-area: ch-news;
-  }
+}
 
-  .ch-services {
+.ch-services {
     grid-area: ch-services;
-  }
+}
 
-  .ch-contact {
+.ch-contact {
     grid-area: ch-contact;
-  }
+}
 
-  .scenario {
+.scenario {
     border: 1px solid #ccc;
     padding: 15px;
     border-radius: 10px;
@@ -188,15 +210,15 @@
 }
 
 .scenario ul li {
-    margin-left: 1em;
+  margin-left: 1em;
 }
 
 .scenario ul + p {
-    margin-top: 5px;
+  margin-top: 5px;
 }
 
 .scenario h4,
 .scenario ul,
 .scenario p {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
