@@ -160,7 +160,6 @@
   }
 
   .scenario {
-    grid-template-columns: repeat(1fr);
     border: 1px solid #ccc;
     padding: 15px;
     border-radius: 10px;
@@ -181,8 +180,8 @@
 }
 
 .scenario ul li::before {
-    content: '\2022'; 
-    color: var(--accent1-color); 
+    content: '\2022';
+    color: var(--accent1-color);
     display: inline-block;
     width: 1em;
     margin-left: -1em;
@@ -195,7 +194,6 @@
 .scenario ul + p {
     margin-top: 5px;
 }
-
 
 .scenario h4,
 .scenario ul,
