@@ -365,7 +365,7 @@ h2 {
   order: 3;
 }
 
-.visit-us h3 {
+.visit-us h3, h4 {
   text-align: left;
   padding: 5px;
 }
@@ -376,7 +376,11 @@ h2 {
   text-align: left;
   align-items: center;
 }
-
+#modificationDate {
+    font-size: 12px; /* Adjust the font size as needed */
+    color: #777; /* Adjust the color as needed */
+    margin-top: 5px; /* Adjust the margin as needed */
+}
 .subscribe-form {
   margin-top: 5px;
   max-width: 250px;
