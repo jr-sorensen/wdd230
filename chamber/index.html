@@ -14,35 +14,51 @@
     <meta property="og:image" content="https://commons.wikimedia.org/wiki/Category:Clear_Channel_Stadium#/media/File:Clear_channel_stadium-070125-01.jpg">
     <meta property="og:url" content="https://www.facebook.com/cityoflancasterca/">
 
+    <link rel="stylesheet" href="styles/normalize.css.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
 </head>
 
 <body>
 
   <!-- Header Section -->
   <header>
-    <!-- Navigation Section -->
-<nav>
-  <div class="navbar">
-    <i class="bx bx-menu"></i>
-    <div class="logo">
-      <a href="logo img"><img src="images/chamber-logo.png" alt="Chamber Logo"></a>
-
-      <ul class="links">
-        <li><a href="about">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="news">News</a></li>
-        <li><a href="contact">Contact</a></li>
-      </ul>
+    <div class="container"> 
+      <nav class="navbar">
+          <img id="logo" src="images/chamber-logo.png" alt="Chamber Logo">
+       
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="news" class="nav-link">News</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger" onclick="myFunction()">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <div class="social-icons">
+          <a href="facebook">
+            <img src="images/fb-icon.png" alt="Facebook">
+          </a>
+          <a href="twitter">
+            <img src="images/twitter-icon.png" alt="Twitter">
+          </a>
+        </div>
+      </nav>
     </div>
-   <div class="social-icons">
-      <a href="facebook"><img src="images/fb-icon.png" alt="Facebook"></a>
-      <a href="twitter"><img src="images/twitter-icon.png" alt="Twitter"></a>
-    </div> 
-</nav>
-
   </header>
-
+  
 
   <!-- Hero Image Section -->
   <section class="hero">
@@ -128,7 +144,7 @@
     </div>
 </div>
 
-<div class="weather-container>">
+<div class="weather-container">
 <div class="weather-card">
   <div class="weather-card-header">
       <h2>Weather</h2>
@@ -184,5 +200,6 @@
 <script src="scripts/header-scroll.js"></script>
 <script src="scripts/currentdate.js"></script>
 <script src="scripts/weather.js"></script>
+<script src="scripts/hamburger-menu.js"></script>
 </body>
 </html>

@@ -1,75 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&family=Nunito&display=swap');
 
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
 }
 
 body {
-  min-height: 100vh;
-  
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
 }
 
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 80px;
-  background: #ffffff; /* White background */
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-  z-index: 99;
+header {
+  height: 100px;
+  background-color: #ffffff;
 }
 
-nav .navbar {
-  height: 100%;
-  max-width: 1250px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: auto;
-  padding: 0 20px; /* Adjusted padding */
-}
-
-.navbar .logo {
-  margin: 10px; /* Adjusted margin */
-}
-
-.navbar .logo img {
-  height: 80px; /* Adjusted to 80px */
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-
-.navbar .logo a {
-  font-size: 20px; /* Adjusted font size */
-  color: #000000; /* Black color */
-  text-decoration: none;
-  font-weight: 600;
-}
-
-nav .navbar .links {
-  display: flex;
-}
-
-nav .navbar .links li {
-  list-style: none;
-  margin-left: 40px; /* Adjusted margin */
-}
-
-nav .navbar .links li a {
-  text-decoration: none;
-  color: #000000; /* Black color */
-  font-size: 14px; /* Adjusted font size */
-  font-weight: 500;
+.container {
+  max-width: 100%;
 }
 
 .navbar {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+#logo {
+  height: 80px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.nav-item {
+  list-style: none;
+  margin-right: 20px;
+}
+
+.nav-link {
+  margin-right: 10px;
+  color: #000000;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: dodgerblue;
 }
 
 .social-icons {
@@ -78,19 +62,35 @@ nav .navbar .links li a {
 }
 
 .social-icons a {
-  margin-right: 10px; /* Adjusted margin */
+  margin-left: 20px;
   text-decoration: none;
-  color: #000000; /* Black color */
+  color: #000000;
 }
 
 .social-icons img {
-  height: 20px; /* Adjusted height */
+  height: 20px;
 }
 
-body {
-  margin: 0;
-  padding: 0;
+/* Move hamburger styles outside of the media query to ensure specificity */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  order: -1;
+  z-index: 1000; /* Set a high z-index to make sure it's on top of other content */
 }
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: #000000; /* White color for hamburger bars */
+}
+
+
+
 
 .hero {
     position: relative;
@@ -100,18 +100,16 @@ body {
   
   .hero h1 {
     position: absolute;
-    top: 20%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-    font-size: 1.5em; /* Adjusted font size */
-    color: #ffffff; /* Adjusted text color */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
-    opacity: 0.8; /* Adjusted opacity for a semi-transparent look */
-    transition: opacity 0.5s ease-in-out; /* Smooth opacity transition */
+    top: 10%;
+    left: 25%; /* Centered horizontally */
+    transform: translate(0, 0);
+    font-size: 1.5em;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    opacity: 0.8;
   }
-  
   .hero:hover h1 {
-    opacity: 1; /* Full opacity on hover */
+    opacity: 1;
   }
   
   .hero img {
@@ -120,320 +118,309 @@ body {
     display: block;
   }
   
-  .hero {
-    position: relative;
-    text-align: center;
-    overflow: hidden;
-  }
-  
   .circle-buttons {
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
     display: flex;
     justify-content: space-around;
-    z-index: 1; /* Set a higher z-index to overlap the hero image */
+    z-index: 1;
+    margin-bottom: -100px; /* Adjust the distance from the bottom */
+
   }
   
   .circle-button {
-    width: 100px; /* Adjusted width of each circle */
-    height: 100px; /* Adjusted height of each circle */
-    background-color: #3498db; /* Adjusted background color */
+    flex: 1; /* Make buttons span across the width */
+    max-width: 100px; /* Limit the maximum width of buttons */
+    height: 100px;
+    background-color: #3498db;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #ffffff; /* Adjusted text color */
+    color: #ffffff;
     cursor: pointer;
-    z-index: 2; /* Set a lower z-index to be behind the text */
+    z-index: 2;
     transition: background-color 0.3s ease-in-out;
-    margin-bottom: -70px; /* Adjusted negative margin for 50% overlap */
+    margin-right: 10px; /* Adjust the space between buttons */
+  }
+  
+  .circle-button:last-child {
+    margin-right: 0; /* Remove margin for the last button */
   }
   
   .circle-button:hover {
-    background-color: #2c3e50; /* Adjusted background color on hover */
-  }
-  .upcoming-events {
-    padding-top: 150px;
-    text-align: center;
-}
-.upcoming-events h2 {
-    margin-bottom: 10px; /* Adjusted margin */
+    background-color: #2c3e50;
   }
   
 
+
+
+.upcoming-events {
+  padding-top: 150px;
+  text-align: center;
+}
+
+.upcoming-events h2 {
+  margin-bottom: 10px;
+  color:#000000
+}
+
 .event-card {
-    width: 200px;
-    height: 300px;
-    background-color: #f0f0f0;
-    margin: 20px;
-    padding: 15px;
-    display: inline-block;
-    vertical-align: top;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
+  width: 200px;
+  height: 300px;
+  background-color: #f0f0f0;
+  margin: 20px;
+  padding: 15px;
+  display: inline-block;
+  vertical-align: top;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
 }
 
 .event-card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .event-card h3 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .event-squares p {
-    margin: 0;
+  margin: 0;
 }
 
 button {
-    margin-top: 20px;
-    padding: 10px 15px;
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-    font-size: 16px;
-    display: block; 
-    margin: auto; 
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  display: block;
+  margin: auto;
 }
 
 button:hover {
-    background-color: #217dbb;
+  background-color: #217dbb;
 }
+
 .join-chamber {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .join-chamber div {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-
 .join-chamber img {
-    padding: 20px;
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
+  padding: 20px;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
 }
 
 .text-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-button {
-    padding: 10px 15px;
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-    font-size: 16px;
-    margin-bottom: 10px;
-    align-content: center;
-    justify-self: auto;
-}
-
-button:hover {
-    background-color: #217dbb;
-}
 h2 {
-    text-align: center;
-   align-content: center; 
+  text-align: center;
+  align-content: center;
 }
 
 .highlights-section {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin: 20px 0;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px 0;
 }
 
 .highlight-card {
-    flex: 1;
-    height: 100px;
-    width: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #3498db;
-    color: #fff;
-    border-radius: 8px;
-    text-align: center;
-    font-size: 16px;
-    margin: 25px;
-    padding: 10px;
+  flex: 1;
+  height: 100px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 16px;
+  margin: 25px;
+  padding: 10px;
 }
 
-.spotlights-section {    
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin: 20px 0;
-    text-align: center;
-    margin: 20px 0;
-    padding-top: -45px;
+.spotlights-section {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px 0;
+  text-align: center;
+  margin: 20px 0;
+  padding-top: -45px;
 }
 
 .spotlight-card {
-    
-    width: 200px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    text-align: center;
-    margin: 20px auto;
+  width: 200px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  margin: 20px auto;
 }
 
 .spotlight-card h3 {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .spotlight-card p {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .spotlight-card img {
-    max-width: 100%;
-    border-radius: 8px;
-    margin-top: 10px;
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
 }
 
 .weather-card {
-    width: 300px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
-    margin: 20px;
-    text-align: center;
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
 }
-
-
 
 .weather-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .weather-card {
-    width: 300px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
-    text-align: center;
-    margin: 20px;
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  margin: 20px;
 }
 
 .weather-card-header {
-    background-color: #3498db;
-    color: #fff;
-    padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
 }
 
 .weather-info {
-    padding: 20px;
+  padding: 20px;
 }
 
 .temperature {
-    font-size: 24px;
-    font-weight: bold;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .condition {
-    margin-top: 10px;
-    font-size: 16px;
+  margin-top: 10px;
+  font-size: 16px;
 }
 
 .location {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #888;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #888;
 }
 
 .footer-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr 2fr; /* Three equal-width columns */
-    background-color: #333;
-    color: #fff;
-    padding: 5px;
-    text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
 }
 
 .footer-logo img {
-    max-width: 200px; /* Adjust as needed */
+  max-width: 200px;
 }
 
 .visit-us {
-    margin-top: 20px;
-}
-.visit-us h3 {
-    text-align: left;
-    padding: 5px;
-}
-.visit-us p {
-    padding: 10px;
-    font-size: 15px;
-    text-align: left;
-    align-items: center;
+  margin-top: 20px;
+  order: 3;
 }
 
+.visit-us h3 {
+  text-align: left;
+  padding: 5px;
+}
+
+.visit-us p {
+  padding: 10px;
+  font-size: 15px;
+  text-align: left;
+  align-items: center;
+}
 
 .subscribe-form {
-    margin-top: 5px;
-    max-width: 250px; /* Set your desired maximum width */
-    margin: auto; /* Center the form horizontally */
+  margin-top: 5px;
+  max-width: 250px;
+  margin: auto;
 }
 
 h2 {
-    color: #fff;
-    font-size: 10px; /* Adjusted font size */
+  color: #fff;
+  font-size: 10px;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 label {
-    margin-top: 8px;
-    font-size: 8px;
-    color: #fff;
+  margin-top: 8px;
+  font-size: 8px;
+  color: #fff;
 }
 
 input {
-    font-size: 12px;
-    padding: 5px;
-    margin-top: 3px;
-    width: 90%;
-    height: 15px;
-    box-sizing: border-box;
+  font-size: 12px;
+  padding: 5px;
+  margin-top: 3px;
+  width: 90%;
+  height: 15px;
+  box-sizing: border-box;
 }
 
 button {
-    background-color: #3498db;
-    color: #fff;
-    padding: 2px 3px;
-    border: none;
-    cursor: pointer;
-    border-radius: 2px;
-    font-size: 10px;
-    margin-top: 5px;
+  background-color: #3498db;
+  color: #fff;
+  padding: 2px 3px;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+  font-size: 10px;
+  margin-top: 5px;
 }
 
 button:hover {
-    background-color: #217dbb;
+  background-color: #217dbb;
 }

@@ -1,0 +1,249 @@
+@media (max-width: 600px) {
+    .hamburger {
+        display: block;
+        color: black;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        display: none;
+        position: fixed; /* Changed to fixed */
+        top: 0; /* Adjusted top position */
+        right: 0;
+        width: 100%;
+        flex-direction: column;
+        background-color: #ffffff;
+        text-align: center;
+        z-index: 999;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .hero {
+        position: relative;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .hero h1 {
+        position: absolute;
+        top: 10%;
+        transform: translate(0, 0);
+        font-size: 12px;
+        color: #ffffff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+    .circle-buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        z-index: 1;
+        margin-bottom: -10px;
+        position: relative;
+    }
+
+    .circle-button {
+        flex: 1;
+        max-width: 50px;
+        max-height: 50px;
+        background-color: #3498db;
+        border-radius: 50%;
+        display: flex;
+        font-size: 10px;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+        margin-right: 10px;
+    }
+
+    .circle-button:last-child {
+        margin-right: 0;
+    }
+
+    .circle-button:hover {
+        background-color: #2c3e50;
+    }
+
+
+/* General styles */
+
+/* General styles */
+
+.join-chamber {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.join-chamber div {
+    width: 100%;
+}
+
+.join-chamber img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.join-chamber button {
+    width: 100%;
+    max-width: 200px;
+}
+
+.highlights-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.highlight-card {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.spotlights-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.spotlight-card {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.spotlight-card h3 {
+    margin-top: 0;
+}
+
+.spotlight-card p {
+    margin: 10px 0;
+}
+
+.spotlight-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+}
+
+.footer-logo img {
+    max-width: 150px; /* Adjusted the max-width for the logo */
+}
+
+.visit-us {
+    margin-top: 10px;
+}
+
+.visit-us h3 {
+    text-align: left;
+    padding: 5px;
+    font-size: 14px; /* Adjusted the font size */
+}
+
+.visit-us p {
+    padding: 5px;
+    font-size: 12px; /* Adjusted the font size */
+}
+
+.subscribe-form {
+    max-width: 200px; /* Adjusted the max-width for the form */
+    margin: 10px auto;
+}
+
+h2 {
+    color: #fff;
+    font-size: 12px; /* Adjusted the font size */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-top: 5px; /* Adjusted the margin-top */
+    font-size: 10px; /* Adjusted the font size */
+    color: #fff;
+}
+
+input {
+    font-size: 10px; /* Adjusted the font size */
+    padding: 3px; /* Adjusted the padding */
+    margin-top: 3px;
+    width: 90%;
+    height: 15px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 2px 5px; /* Adjusted the padding */
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+button:hover {
+    background-color: #217dbb;
+}
+}
+
