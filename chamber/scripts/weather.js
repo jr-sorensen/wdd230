@@ -1,25 +1,27 @@
-const apiKey = 'E3BZfw6Ub3WLSk0IrGy2BI99iyIJWVVT';
-const latitude = 34.686787;
-const longitude = -118.154160;
-const apiEndpoint = `https://api.tomorrow.io/v4/timelines?location=${latitude},${longitude}&fields=temperature&timesteps=1h&units=imperial&apikey=${apiKey}`;
 
-    fetch(apiEndpoint)
-        .then(response => response.json())
-        .then(data => {
-            const temperature = data.data.timelines[0].intervals[0].values.temperature;
-            const condition = data.data.timelines[0].intervals[0].values.weatherCode;
-            const location = 'Lancaster, CA';
+const apiUrl = "https://api.open-meteo.com/v1/forecast?latitude=34.686787&longitude=-73.98529171943665&current=temperature_2m,wind_speed_10m&hourly=temperature_2m,relative_humidity_2m,wind_speed_10m";
 
-            const weatherCard = document.querySelector('.weather-card');
-            weatherCard.innerHTML = `
-                <div class="weather-card-header">
-                    <h2>Weather</h2>
-                </div>
-                <div class="weather-info">
-                    <div class="temperature">${temperature}°F</div>
-                    <div class="condition">${condition}</div>
-                    <div class="location">${location}</div>
-                </div>
-            `;
-        })
-        .catch(error => console.error('Error fetching weather data:', error));
+// Function to convert Celsius to Fahrenheit
+const celsiusToFahrenheit = (celsius) => (celsius * 9/5) + 32;
+
+// Fetch data from the API
+fetch(apiUrl)
+    .then(response => response.json())
+    .then(data => {
+        // Update current weather information
+        const currentTemperatureCelsius = data.current.temperature_2m;
+        const currentWindSpeed = data.current.wind_speed_10m;
+
+        // Convert Celsius to Fahrenheit
+        const currentTemperatureFahrenheit = celsiusToFahrenheit(currentTemperatureCelsius);
+        
+        const weatherInfoContainer = document.querySelector('.weather-info');
+        weatherInfoContainer.innerHTML = `
+            <div class="temperature"> Current Temp: ${currentTemperatureFahrenheit.toFixed(2)} °F</div>
+            <div class="wind-speed"> Wind Speed: ${currentWindSpeed} m/s</div>
+            <div class="Location"> Lancaster, CA </div>
+        `;
+
+      
+    })
+    .catch(error => console.error('Error fetching weather data:', error));
