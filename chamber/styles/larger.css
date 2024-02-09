@@ -203,4 +203,105 @@
   .visit-us h3 {
       text-align: left;
   }
+  
+body.dark-mode {
+    background-color: black;
+    color: white;
+  }
+  
+  
+  body.dark-mode {
+    background-color: black;
+    color: white;
+  }
+  
+  
+  header.dark-mode {
+    background-color: #333; 
+    color: white;
+  }
+  
+  
+  .navbar.dark-mode {
+    background-color: #333; 
+    color: white;
+  }
+  
+  .hamburger.dark-mode {
+    color: white;
+  }
+  
+  footer.dark-mode {
+    background-color: #333; 
+    color: white;
+  }
+  
+  .switch.dark-mode {
+    background-color: #333; 
+  }
+  
+  .switch.dark-mode .slider {
+    background-color: #ccc;
+  }
+  
+  .switch.dark-mode .slider:before {
+    background-color: white;
+  }
+  
+  
+  .switch {
+    position: fixed;
+    top: 45px; 
+    right: 35px; 
+    display: inline-block;
+    width: 40px; 
+    height: 20px; 
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 20px; }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px; 
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #219EBC;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #888;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px); 
+    transform: translateX(20px); 
+  }
+  
+  
 }
