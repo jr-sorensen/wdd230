@@ -322,15 +322,6 @@ h2 {
   height: 100vh;
 }
 
-.weather-card {
-  width: 300px;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  overflow: hidden;
-  text-align: center;
-  margin: 5px;
-}
 
 .weather-card-header {
   background-color: #FB8500;
@@ -404,6 +395,10 @@ footer {
   margin-top: 5px;
   max-width: 250px;
   margin: auto;
+  color: #fff;
+}
+.subscribe-form h2 {
+  color: #fff;
 }
 
 

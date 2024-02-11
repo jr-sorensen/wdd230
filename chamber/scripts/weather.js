@@ -1,5 +1,5 @@
 
-const apiUrl = "https://api.open-meteo.com/v1/forecast?latitude=34.686787&longitude=-73.98529171943665&current=temperature_2m,wind_speed_10m&hourly=temperature_2m,relative_humidity_2m,wind_speed_10m";
+const apiUrl = "https://api.open-meteo.com/v1/forecast?latitude=34.686787&longitude=118.154160&current=temperature_2m,wind_speed_10m&hourly=temperature_2m,relative_humidity_2m,wind_speed_10m";
 
 
 const celsiusToFahrenheit = (celsius) => (celsius * 9/5) + 32;

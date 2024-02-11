@@ -31,7 +31,7 @@
       margin-top: 20px;
       padding: 10px 15px;
       background-color: #219EBC;
-      color: #fff;
+      color: black;
       border: none;
       cursor: pointer;
       border-radius: 4px;
@@ -89,11 +89,11 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: #219EBC;
+      background-color: #FB8500;
       color: #fff;
       border-radius: 8px;
       text-align: center;
-      font-size: 16px;
+      font-size: 25px;
       margin: 25px;
       padding: 10px;
   }
@@ -149,7 +149,7 @@
 
   .weather-card {
       width: 300px;
-      background-color: #fff;
+      background-color:#fff;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
       overflow: hidden;
