@@ -202,7 +202,7 @@ button {
   margin-top: 20px;
   padding: 10px 15px;
   background-color: #219EBC;
-  color: black#fff;
+  color: black;
   border: none;
   cursor: pointer;
   border-radius: 4px;
@@ -213,7 +213,7 @@ button {
 
 button:hover {
   background-color: #219EBC;
-  color: #fff;
+  color: #FFB703;
 }
 
 .join-chamber {
