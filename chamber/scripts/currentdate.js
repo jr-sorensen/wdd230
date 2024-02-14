@@ -6,8 +6,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     document.getElementById("currentDate").innerHTML = `${formattedCurrentDate} and Beyond`;
 
-    const copyrightYear = new Date().getFullYear();
-    document.getElementById("copyright").innerHTML = `&copy; ${copyrightYear} Jessica Sorensen, California`;
 
     const lastModified = new Date(document.lastModified);
     const formattedLastModified = lastModified.toLocaleString('en-US', options);
