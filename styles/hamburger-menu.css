@@ -8,6 +8,18 @@
     font-size: 20px;
 }
 
+.exit-button {
+    display: none;
+    position: fixed;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    color: black;
+    z-index: 1001;
+}
+
+
 .mobile-menu {
     display: none;
     background-color: #153c2c;
