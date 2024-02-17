@@ -137,7 +137,14 @@
   <button>View All Events</button>
 
   <section class="join-chamber">
-    <div><img src="images/joshua-trees.jpeg" alt="Joshua Trees Lancaster, CA"></div>
+    <div class="joshua-trees">
+        <picture>
+          <source srcset="images/joshua-trees-small.webp" media="(max-width: 200px)">
+          <source srcset="images/joshua-trees-medium.webp" media="(max-width: 400px)">
+          <source srcset="images/joshua-trees-large.webp" media="(max-width: 800px)">
+          <img src="images/joshua-trees-large.webp" alt="Lesson 6 Image" width="800" height="500">
+        </picture>
+      </div>
     <div><button>Become a Chamber Member Today</button>
     <p>Information on why it's good to join the Chamber of Commerce.</p></div>
   </section>
@@ -233,7 +240,7 @@
 
   <script src="scripts/header-scroll.js"></script>
   <script src="scripts/currentdate.js"></script>
-  <script src="scripts/weather.js"></script>
+  <script src="scripts/windchill.js"></script>
   <script src="scripts/hamburger-menu.js"></script>
   <script src="scripts/modifidedate.js"></script>
   <script src="scripts/dark-mode.js"></script>
