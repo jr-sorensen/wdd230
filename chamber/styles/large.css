@@ -1,0 +1,22 @@
+@media (min-width: 1200px) {
+    .small-overlay,
+    .medium-overlay{
+      display: none;
+    }
+    
+    .large-overlay {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 15px;
+        border-radius: 8px;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+
+}

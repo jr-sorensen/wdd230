@@ -101,7 +101,7 @@ header {
   background-color: var(--text-color);
 }
 
-.hero {
+/* .hero {
   position: relative;
   text-align: center;
   overflow: hidden;
@@ -126,7 +126,39 @@ header {
   width: 100%;
   height: auto;
   display: block;
+} */
+
+/* Styles for the hero container */
+.hero {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
 }
+
+/* Styles for the text overlays */
+
+
+.small-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+}
+
+.medium-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+}
+
+.large-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+}
+
+/* Additional styling for the img element */
+.hero img {
+  width: 100%; /* Make sure the image fills its container */
+  height: auto; /* Maintain the image's aspect ratio */
+}
+
 
 .circle-buttons {
   position: relative;
@@ -495,6 +527,9 @@ body.dark-mode .spotlight-card {
   background-color: #333;
   border-color: #FB8500;
   color: white;
+}
+body.dark-mode h2{
+  color:white;
 }
 
 body.dark-mode footer {

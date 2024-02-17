@@ -16,8 +16,9 @@
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/large.css">
 </head>
 
 <body>
@@ -26,7 +27,7 @@
   <header>
     <div class="container"> 
       <nav class="navbar">
-          <img id="logo" src="images/chamber-logo.png" alt="Chamber Logo">
+          <img id="logo" src="images/chamber-logo.webp" alt="Chamber Logo">
        
         <ul class="nav-menu">
           <li class="nav-item">
@@ -67,10 +68,23 @@
         <span class="slider"></span>
       </label>
     </div>
-  <section class="hero">
+
+    <div class="hero">
+      <picture>
+        <source srcset="images/small.webp" media="(max-width: 600px)">
+          <div class="small-overlay">small</div>
+        <source srcset="images/medium.webp" media="(max-width: 1000px)">
+          <div class="medium-overlay">medium</div>
+        <source srcset="images/large.webp" media="(max-width: 1600px)">
+          <div class="large-overlay">large</div>
+        <img src="images/large.webp" alt="Lesson 6 Image" width="1200" height="1067">
+      </picture>
+    </div>
+
+  <!-- <section class="hero">
   <h1>City of Lancaster Chamber of Commerce</h1>
     <img src="images/stadium.jpg" alt="Lancaster Stadium">
-  </section>
+  </section> -->
 
 
     <section class="circle-buttons">
@@ -169,7 +183,7 @@
 
     <div class="footer-container">
     <div class="footer-logo">
-        <img src="images/chamber-logo.png" alt="Chamber of Commerce Logo">
+        <img src="images/chamber-logo.webp" alt="Chamber of Commerce Logo">
     </div>
 
     <div class="visit-us">
@@ -217,5 +231,7 @@
   <script src="scripts/hamburger-menu.js"></script>
   <script src="scripts/modifidedate.js"></script>
   <script src="scripts/dark-mode.js"></script>
+  <script src="scripts/overlay.js"></script>
+
 </body>
 </html>

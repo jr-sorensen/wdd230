@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap);
 
-/* Base Styles */
+
 body {
     font-family: 'Raleway', sans-serif;
     border: 1px solid #ccc;
@@ -20,38 +20,38 @@ header {
 }
 
 .headshot {
-    max-width: 1000%; /* Ensure the container does not exceed the viewport width */
-    margin: 0 auto; /* Center the container */
+    max-width: 1000%; 
+    margin: 0 auto; 
   }
   
  .headshot img {
-    width: 100%; /* Make the image fill the width of its container */
-    height: auto; /* Maintain the aspect ratio of the image */
-    max-width: 100px; /* Set a maximum width for larger screens */
-    display:inline-flex; /* Remove any extra spacing below the image */
+    width: 100%; 
+    height: auto; 
+    max-width: 100px; 
+    display:inline-flex; 
   }
 
   .hero {
     grid-column: span 2;
-    max-width: 1000%; /* Ensure the container does not exceed the viewport width */
-    margin: 0 auto; /* Center the container */
+    max-width: 1000%;
+    margin: 0 auto;
     text-align: center;
     position: relative;
-    overflow: hidden; /* Ensure overflow doesn't affect the layout */
+    overflow: hidden;
 }
 
 
 .overlay {
     position: absolute;
-    top: 85%; /* Position from the top */
-    left: 50%; /* Position from the left */
-    transform: translate(-50%, -50%); /* Center the overlay */
+    top: 85%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
     text-align: center;
     color: white;
     font-size: 16px;
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    background: rgba(0, 0, 0, 0.7);
     padding: 10px;
-    white-space: nowrap; /* Prevent text wrapping */
+    white-space: nowrap; 
 }
 
 

@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const isOpen = mobileMenu.classList.contains('show-menu');
         hamburgerIcon.innerHTML = isOpen ? '&#10005;' : '&#8801;';
 
-        // Show/hide the exit button based on menu visibility
+        
         exitButton.style.display = isOpen ? 'block' : 'none';
     }
 
