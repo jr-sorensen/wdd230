@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+main {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    opacity: 0;
+    background: black;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+footer {
+    background-color: #333;
+    color:#fff;
+    text-align: center;
+    padding: 1em;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
