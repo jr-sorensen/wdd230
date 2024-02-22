@@ -10,8 +10,6 @@ document.addEventListener('DOMContentLoaded', function () {
         mobileMenu.classList.toggle('show-menu');
         const isOpen = mobileMenu.classList.contains('show-menu');
         hamburgerIcon.innerHTML = isOpen ? '&#10005;' : '&#8801;';
-
-        
         exitButton.style.display = isOpen ? 'block' : 'none';
     }
 
