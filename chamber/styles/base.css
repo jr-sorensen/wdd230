@@ -655,6 +655,9 @@ h3 {
   margin-top: 5px;
   text-align: center;
 }
+.stats h3 {
+  color: #000000;
+}
 
 .calendar {
   border-collapse: collapse;
