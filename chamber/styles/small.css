@@ -298,7 +298,6 @@
         padding-bottom: 75%; 
         margin-bottom: 20px;
         border: 1px solid #ccc;
-        transition: transform 0.3s ease-in-out;
       }
       
       .image-container img {
