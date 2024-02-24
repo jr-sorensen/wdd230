@@ -104,7 +104,7 @@
       }
 
       body.dark-mode main {
-        background-color: #333; 
+        background-color: #5d5c5c; 
       }
       
       body.dark-mode .stats {
@@ -116,7 +116,15 @@
         transition: transform 0.3s ease-in-out;
       }
       
-  
+      body.dark-mode .sidebar {
+        background-color: #000000;
+        color: white;
+      }
+      
+      body.dark-mode .sidebar .message {
+        /* Add specific styles for the message inside the dark mode sidebar */
+        color: white;
+      }
       body.dark-mode .stats:hover {
         transform: scale(1.05);
       }
