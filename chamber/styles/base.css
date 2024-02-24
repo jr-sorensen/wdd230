@@ -76,13 +76,15 @@ header {
 }
 
 .social-icons a {
-  margin-left: 20px;
+  margin-left: 25px;
   text-decoration: none;
   color: var(--text-color);
 }
 
 .social-icons img {
-  height: 20px;
+  max-height: 15px;
+  width:auto;
+
 }
 
 .hamburger {
@@ -647,7 +649,7 @@ h2 {
 }
 
 h3 {
-  color: #023047;
+  color: #ffffff;
   font-size: 16px;
   margin-top: 5px;
 }
