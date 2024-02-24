@@ -573,6 +573,9 @@ body.dark-mode .footer-container {
   color: white;
 }
 
+body.dark-mode .sidebar .message{
+  color:black;
+}
 .switch {
   position: fixed;
   top: 50px; 
@@ -625,7 +628,12 @@ input:checked + .slider:before {
   transform: translateX(20px); 
 }
 
-
+h1 {
+  margin-top: 20px;
+  align-items: center;
+  text-align: center;
+  grid-column: span 2;
+}
 
 .stats {
   text-align: center;

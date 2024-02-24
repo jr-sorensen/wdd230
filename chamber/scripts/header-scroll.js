@@ -1,5 +1,5 @@
 document.addEventListener("scroll", function () {
-  const h1 = document.querySelector("h1");
+  const h1 = document.querySelector(".hero h1");
   const scrollPos = window.scrollY;
 
   if (h1) {

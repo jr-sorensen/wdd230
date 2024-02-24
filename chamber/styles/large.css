@@ -31,17 +31,19 @@
       }
       body {
         display: grid;
-        grid-template-columns: 1fr; /* Single column layout for mobile */
-        gap: 20px; /* Adjust the gap as needed */
+        grid-template-columns: 1fr; 
+        gap: 20px; 
       }
       
       main {
         display: grid;
-        grid-template-columns: 1fr 1fr; /* Two-column layout for larger screens */
-        gap: 20px; /* Adjust the gap as needed */
+        grid-template-columns: 1fr 1fr; 
+        gap: 20px; 
       }
       
       .stats {
+        display: grid; 
+        grid-template-columns: 1fr; 
         border: 1px solid #ddd;
         padding: 15px;
         border-radius: 8px;
@@ -50,12 +52,10 @@
         transition: transform 0.3s ease-in-out;
       }
       
-      /* Hover effect on stats boxes */
+ 
       .stats:hover {
         transform: scale(1.05);
       }
-      
-      /* Stats title styling */
       .stats h2 {
         color: #030303;
         margin-bottom: 10px;
@@ -63,7 +63,7 @@
         padding-bottom: 5px;
       }
       
-      /* List item styling */
+      
       .stats ul {
         list-style: none;
         padding: 0;
@@ -75,7 +75,7 @@
       }
       
       
-      /* Lazy loading images */
+      
       .image-content {
         display: grid;
         grid-template-columns:  1fr; 
@@ -103,7 +103,53 @@
         object-fit: cover;
       }
 
-      body.dark-mode tr, td {
+      body.dark-mode main {
+        background-color: #333; 
+      }
+      
+      body.dark-mode .stats {
+        border: 1px solid #555; 
+        padding: 15px;
+        border-radius: 8px;
+        background-color: #333; 
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); 
+        transition: transform 0.3s ease-in-out;
+      }
+      
+  
+      body.dark-mode .stats:hover {
+        transform: scale(1.05);
+      }
+      
+    
+      body.dark-mode .stats h2  {
+        color: #fff; 
+      }
+      body.dark-mode .stats h3 {
+        color: #fff; 
+      }
+      
+    
+      body.dark-mode .stats ul li {
+        color: #fff;
+      }
+
+      
+     
+      body.dark-mode .image-content {
+        background-color: #333; 
+      }
+      
+      body.dark-mode .image-container {
+        border: 1px solid #555; 
+        transition: transform 0.3s ease-in-out;
+      }
+      
+      body.dark-mode .image-container img {
+        border: 1px solid #555; 
+      }
+      
+      body.dark-mode tr {
         background-color: #9d9d9d;
         color: white;
       }
@@ -111,6 +157,13 @@
         background-color: #d5d5d5;
         color: rgb(0, 0, 0);
       }
+      body.dark-mode tr {
+        background-color: #9d9d9d;
+        color: black;}
 
 
-}
+    
+    }
+    
+
+

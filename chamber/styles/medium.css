@@ -221,11 +221,7 @@
       text-align: left;
   }
 
-  body {
-    display: grid;
-    grid-template-columns: 1fr; 
-    gap: 20px; 
-  }
+
   
   main {
     display: grid;
@@ -234,6 +230,8 @@
   }
   
   .stats {
+    display: grid;  /* Add this line to specify grid display */
+    grid-template-columns: 1fr; 
     border: 1px solid #ddd;
     padding: 15px;
     border-radius: 8px;
@@ -264,9 +262,7 @@
   .stats ul li {
     margin-bottom: 5px;
   }
-  
-  
- 
+
   .image-content {
     display: grid;
     grid-template-columns:  1fr; 
