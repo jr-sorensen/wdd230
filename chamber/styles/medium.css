@@ -265,8 +265,7 @@
 
   .image-content {
     display: grid;
-    grid-template-columns:  1fr; /* Adjust column width as needed */
-    gap: 20px;
+    grid-template-columns:  1fr; 
     justify-content: center;
   }
   
