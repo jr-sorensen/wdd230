@@ -288,7 +288,7 @@
     object-fit: cover;
   }
   body.dark-mode main {
-    background-color: 5d5c5c; 
+    background-color: #5d5c5c; 
   }
 
  body.dark-mode .sidebar {
