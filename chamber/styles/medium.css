@@ -220,6 +220,126 @@
   .visit-us h3 {
       text-align: left;
   }
+
+  body {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 20px; 
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+  }
+  
+  .stats {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+ 
+  .stats:hover {
+    transform: scale(1.05);
+  }
+  
+ 
+  .stats h2 {
+    color: #000000;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+  }
+  
+  .stats ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .stats ul li {
+    margin-bottom: 5px;
+  }
   
   
+ 
+  .image-content {
+    display: grid;
+    grid-template-columns:  1fr; 
+    gap: 20px; 
+  }
+  
+  .image-container {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    padding-bottom: 75%; 
+    margin-bottom: 20px;
+    border: 1px solid #ccc; 
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 100%;
+    object-fit: cover;
+  }
+  body.dark-mode main {
+    background-color: #333; 
+  }
+  
+  body.dark-mode .stats {
+    border: 1px solid #555; 
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #333; 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); 
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  
+  body.dark-mode .stats:hover {
+    transform: scale(1.05);
+  }
+  
+  
+  body.dark-mode .stats h2, h3 {
+    color: #fff; 
+  }
+  
+ 
+  body.dark-mode .stats ul li {
+    color: #fff;
+  }
+  
+ 
+  body.dark-mode .image-content {
+    background-color: #333; 
+  }
+  
+  body.dark-mode .image-container {
+    border: 1px solid #555;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  body.dark-mode .image-container img {
+    border: 1px solid #555; 
+  }
+  
+  body.dark-mode tr, td {
+    background-color: #9d9d9d;
+    color: white;
+  }
+  body.dark-mode th {
+    background-color: #d5d5d5;
+    color: rgb(0, 0, 0);
+  }
+
 }

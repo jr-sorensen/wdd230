@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jessica Sorensen" >
+    <meta name="description" content="WDD 230 - Chamber home page build." >
+    <link rel="icon" href="favicon.ico" type="images/chamber-favicon.ico">
+    <title>Chamber of Commerce</title>
+
+    <meta property="og:title" content="City of Lancaster Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://commons.wikimedia.org/wiki/Category:Clear_Channel_Stadium#/media/File:Clear_channel_stadium-070125-01.jpg">
+    <meta property="og:url" content="https://www.facebook.com/cityoflancasterca/">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+
+<body>
+
+
+  <header>
+    <div class="container"> 
+      <nav class="navbar">
+          <img id="logo" src="images/chamber-logo.webp" alt="Chamber Logo">
+       
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="news" class="nav-link">News</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger" onclick="myFunction()">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <div class="social-icons">
+          <a href="facebook">
+            <img src="images/fb-icon.png" alt="Facebook">
+          </a>
+          <a href="twitter">
+            <img src="images/twitter-icon.png" alt="Twitter">
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  
+
+  <main>
+    <div class="switch">
+      <label class="switch-label">
+        <input type="checkbox" id="dark-mode-checkbox">
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="sidebar">
+        <div class="sidebar">
+            <div class="message"></div>
+        </div>
+
+        <div class="stats">
+        <h2>City of Lancaster Stats</h2>
+        <ul>
+            <li><strong>Population:</strong> 170,150 (2021)</li>
+            <li><strong>Elevation:</strong> 2,359′</li>
+            <li><strong>Incorporated:</strong> November 22, 1977</li>
+            <li><strong>Males:</strong> 85,657 (50.3%)</li>
+            <li><strong>Females:</strong> 84,493 (49.7%)</li>
+        </ul>
+        </div>
+    
+        <div class="stats">
+        <h2>Top Attractions</h2>
+        <ul>
+            <li>Civic Musical Road</li>
+            <li>Antelope Valley Poppy Reserve</li>
+            <li>Prime Woodland Preserve</li>
+        </ul>
+        </div>
+
+        <div class="stats">
+        <h2>Annual Events</h2>
+        <ul>
+            <li>California Poppy Festival</li>
+            <li>Antelope Valley Fair</li>
+            <li>A Magical BLVD Christmas</li>
+        </ul>
+        </div>
+        <div class="stats">
+            <h2>Calendar</h2>
+            <h3>Current Month</h3>
+            <table class="calendar">
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+     
+    <div class="image-content">
+       
+        <div class="image-container">
+            <img src="images/garth-img.webp" alt="Garth" loading="lazy">
+        </div>
+
+        <div class="image-container">
+            <img src="images/hank-img.webp" alt="Hank" loading="lazy">
+        </div>
+       
+        <div class="image-container">
+            <img src="images/lainey-img.webp" alt="Lainey" loading="lazy">
+        </div>
+
+        <div class="image-container">
+            <img src="images/luke-img.webp" alt="Luke" loading="lazy">
+        </div>
+       
+        <div class="image-container">
+            <img src="images/morgan-img.webp" alt="Morgan" loading="lazy">
+        </div>
+
+        <div class="image-container">
+            <img src="images/paisley-img.webp" alt="Paisley" loading="lazy">
+        </div>
+
+
+  </main>
+
+  <footer>
+
+    <div class="footer-container">
+    <div class="footer-logo">
+        <img src="images/chamber-logo.webp" alt="Chamber of Commerce Logo">
+    </div>
+
+    <div class="visit-us">
+        <h3>Visit Us</h3>
+        <p>44933 Fern Avenue, Lancaster, CA 93534<br>
+        Hours: 8:00 am - 5:00 pm, Monday - Friday<br>
+        Phone: 661-723-6000</p>
+
+        <h4>Jessica Sorensen</h4>
+        <p>Chamber of Commerce project WDD 230</p>
+        <div id="lastModified"> Modified Date</div>
+        <p>Visits to website: <span id="visitCounter">0</span></p>
+    </div>
+   
+    <section class="subscribe-form">
+        <h2>Subscribe to Our Newsletter</h2>
+        <form action="#" method="post" id="subscriptionForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+    </div>
+  </footer>
+
+  <section class="google-map">
+    <div class="map-container">
+      <iframe title="Google Map of Lancaster,CA" 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3315.6781182651097!2d-118.148105!3d34.6423554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c25ac8f524da3f%3A0x38c8d4474fa429dd!2sAntelope%20Valley%20Chambers%20of%20Commerce!5e0!3m2!1sen!2sus!4v1643956600635!5m2!1sen!2sus"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+  </section>
+
+  <script src="scripts/header-scroll.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/windchill.js"></script>
+  <script src="scripts/hamburger-menu.js"></script>
+  <script src="scripts/modifidedate.js"></script>
+  <script src="scripts/dark-mode.js"></script>
+  <script src="scripts/overlay.js"></script>
+  <script src="scripts/storage.js"></script>
+
+</body>
+</html>

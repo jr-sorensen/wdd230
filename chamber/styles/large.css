@@ -29,4 +29,88 @@
         margin: 50px;
         color: var(--text-color);
       }
+      body {
+        display: grid;
+        grid-template-columns: 1fr; /* Single column layout for mobile */
+        gap: 20px; /* Adjust the gap as needed */
+      }
+      
+      main {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two-column layout for larger screens */
+        gap: 20px; /* Adjust the gap as needed */
+      }
+      
+      .stats {
+        border: 1px solid #ddd;
+        padding: 15px;
+        border-radius: 8px;
+        background-color: #f8f8f8;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+      }
+      
+      /* Hover effect on stats boxes */
+      .stats:hover {
+        transform: scale(1.05);
+      }
+      
+      /* Stats title styling */
+      .stats h2 {
+        color: #030303;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 5px;
+      }
+      
+      /* List item styling */
+      .stats ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      .stats ul li {
+        margin-bottom: 5px;
+      }
+      
+      
+      /* Lazy loading images */
+      .image-content {
+        display: grid;
+        grid-template-columns:  1fr; 
+        gap: 20px; 
+      }
+      
+      .image-container {
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+        overflow: hidden;
+        height: 0;
+        padding-bottom: 75%; 
+        margin-bottom: 20px;
+        border: 1px solid #ccc; 
+        transition: transform 0.3s ease-in-out;
+      }
+      
+      .image-container img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 400px;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      body.dark-mode tr, td {
+        background-color: #9d9d9d;
+        color: white;
+      }
+      body.dark-mode th {
+        background-color: #d5d5d5;
+        color: rgb(0, 0, 0);
+      }
+
+
 }

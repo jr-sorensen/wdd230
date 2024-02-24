@@ -625,3 +625,48 @@ input:checked + .slider:before {
   transform: translateX(20px); 
 }
 
+
+
+.stats {
+  text-align: center;
+  margin-top: 20px;
+}
+
+h2 {
+  color: #023047;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: #023047;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.calendar {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  height: 50px; 
+  width: 50px;
+}
+
+th {
+  background-color: #023047;
+  color: #fff;
+}
+
+td {
+  text-align: center;
+}
+
+
+td:not(:empty):hover {
+  background-color: #8ECAE6;
+  cursor: pointer;
+}
