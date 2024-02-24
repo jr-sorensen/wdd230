@@ -74,10 +74,16 @@
         margin-bottom: 5px;
       }
       
+ 
       
+      .image-container {
+        margin: 10px;
+      }
       
-      .image-content {
-        display: grid;
+      .image-content { display: flex;
+        justify-content: center;
+        align-items: center;
+        
         grid-template-columns:  1fr; 
         gap: 20px; 
       }
@@ -122,7 +128,7 @@
       }
       
       body.dark-mode .sidebar .message {
-        /* Add specific styles for the message inside the dark mode sidebar */
+      
         color: white;
       }
       body.dark-mode .stats:hover {
