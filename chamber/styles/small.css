@@ -277,7 +277,7 @@
     }
     
     .sidebar {
-        grid-column: 1fr;
+        
         background-color: #f8f8f8; 
         padding: 15px;
         border-radius: 8px;
@@ -285,7 +285,7 @@
     }
     
     .stats {
-        grid-column: 1fr;
+       
         border: 1px solid #ddd;
         padding: 15px;
         border-radius: 8px;
