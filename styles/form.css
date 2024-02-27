@@ -1,3 +1,14 @@
+:root {
+    --primary-color: #05502f;
+    --secondary-color: rgb(215, 193, 150);
+    --background-color: #ecf0f1;
+    --text-color: #333;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
 
 main {
     max-width: 600px;
@@ -16,7 +27,7 @@ form {
     box-sizing: border-box; 
     text-align: center;
     margin: 2rem 0;
-    border: 1px solid #445ba9;
+    border: 1px solid var(--primary-color);
     border-radius: 10px;
     padding: 0.5rem 2%;
 }
@@ -24,7 +35,7 @@ form {
 
 
 legend {
-    color: #445ba9;
+    color: var(--secondary-color) ;
     margin: 0 1rem;
     padding: 0 0.5rem;
 }
@@ -74,13 +85,15 @@ label.top input:valid {
 }
 form fieldset {
     margin: 2rem 0;
-    border: 1px solid #445ba9;
+    border: 1px solid var(--primary-color);
     border-radius: 10px;
     padding: 0.5rem 2%;
 }
 
 form legend {
-    color: #445ba9;
+    color: var(--primary-color);
     margin: 0 1rem;
     padding: 0 0.5rem;
+    font-size: 1.2rem; 
+    text-decoration: underline;
 }
