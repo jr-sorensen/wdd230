@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jessica Sorensen" >
+    <meta name="description" content="WDD 230 - Chamber home page build." >
+    <link rel="icon" href="favicon.ico" type="images/chamber-favicon.ico">
+    <title>Chamber of Commerce</title>
+
+    <meta property="og:title" content="City of Lancaster Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://commons.wikimedia.org/wiki/Category:Clear_Channel_Stadium#/media/File:Clear_channel_stadium-070125-01.jpg">
+    <meta property="og:url" content="https://www.facebook.com/cityoflancasterca/">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+
+<body>
+
+
+  <header>
+    <div class="container"> 
+      <nav class="navbar">
+          <img id="logo" src="images/chamber-logo.webp" alt="Chamber Logo">
+       
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="news" class="nav-link">News</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger" onclick="myFunction()">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <div class="social-icons">
+          <a href="facebook">
+            <img src="images/fb-icon.png" alt="Facebook">
+          </a>
+          <a href="twitter">
+            <img src="images/twitter-icon.png" alt="Twitter">
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  
+
+  <main class="form-container">
+    <form id="join-form" action="thankyou.html" method="get">
+        <fieldset>
+            <legend>Join the Chamber</legend>
+    
+            <!-- Applicant's First Name -->
+            <label for="firstName" class="form-label">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required class="form-input">
+    
+            <!-- Applicant's Last Name -->
+            <label for="lastName" class="form-label">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required class="form-input">
+    
+            <!-- Applicant's Title or Position -->
+            <label for="titlePosition" class="form-label">Title or Position:</label>
+            <input type="text" id="titlePosition" name="titlePosition" required pattern="[a-zA-Z -]{7,}" class="form-input">
+    
+            <!-- Contact Email Address -->
+            <label for="contactEmail" class="form-label">Contact Email:</label>
+            <input type="email" id="contactEmail" name="contactEmail" required placeholder="example@example.com" class="form-input">
+    
+            <!-- Mobile Phone Number -->
+            <label for="mobilePhoneNumber" class="form-label">Mobile Phone Number:</label>
+            <input type="tel" id="mobilePhoneNumber" name="mobilePhoneNumber" required class="form-input">
+    
+            <!-- Business/Organization Name -->
+            <label for="organizationName" class="form-label">Business/Organization Name:</label>
+            <input type="text" id="organizationName" name="organizationName" required class="form-input">
+    
+            <!-- Membership Level Selection -->
+            <label for="membershipLevel" class="form-label">Membership Level:</label>
+            <select id="membershipLevel" name="membershipLevel" required class="form-input">
+                <option value="NP">NP Membership</option>
+                <option value="Bronze">Bronze Membership</option>
+                <option value="Silver">Silver Membership</option>
+                <option value="Gold">Gold Membership</option>
+            </select>
+    
+            <!-- Business/Organization Description -->
+            <label for="organizationDescription" class="form-label">Business/Organization Description:</label>
+            <textarea id="organizationDescription" name="organizationDescription" class="form-input"></textarea>
+    
+            <!-- Hidden Field for Date/Time -->
+            <input type="hidden" id="formLoadDateTime" name="formLoadDateTime" class="form-input">
+    
+            <!-- Form Submission Button -->
+            <button type="submit" class="form-submit">Submit Form</button>
+        </fieldset>
+    </form>
+    
+    <!-- Membership Level Benefits Section -->
+    <div class="membership-benefits">
+        <h2>Membership Benefits</h2>
+        
+        <p><strong>NP Membership:</strong> No fee and basic benefits.</p>
+        <p><strong>Membership Fee:</strong> Free</p>
+        <p><strong>Benefits:</strong></p>
+        <ul>
+            <li>Access to basic events and networking opportunities.</li>
+            <li>Monthly newsletter subscription.</li>
+            <li>Limited access to online resources.</li>
+        </ul>
+        <br>
+    
+        <p><strong>Bronze Membership:</strong> Increased benefits with a moderate fee.</p>
+        <p><strong>Membership Fee:</strong> $50 per year</p>
+        <p><strong>Benefits:</strong></p>
+        <ul>
+            <li>All benefits of NP Membership.</li>
+            <li>Exclusive access to premium events.</li>
+            <li>Enhanced networking opportunities.</li>
+            <li>Discounted rates on workshops and training sessions.</li>
+            
+        </ul>
+        <br>
+        <p><strong>Silver Membership:</strong> More benefits at a higher cost.</p>
+        <p><strong>Membership Fee:</strong> $100 per year</p>
+        <p><strong>Benefits:</strong></p>
+        <ul>
+            <li>All benefits of Bronze Membership.</li>
+            <li>Priority access to industry reports and market insights.</li>
+            <li>Featured listing in the membership directory.</li>
+            <li>Complimentary entry to major conferences.</li>
+            
+        </ul>
+        <br>
+        <p><strong>Gold Membership:</strong> Premium benefits with the highest cost.</p>
+        <p><strong>Membership Fee:</strong> $200 per year</p>
+        <p><strong>Benefits:</strong></p>
+        <ul>
+            <li>All benefits of Silver Membership.</li>
+            <li>VIP access to exclusive events with industry leaders.</li>
+            <li>Personalized business consultation sessions.</li>
+            <li>Complimentary advertising opportunities on the organization's website.</li>
+            
+        </ul>
+    </div>
+    
+  </main>
+
+  <footer>
+
+    <div class="footer-container">
+    <div class="footer-logo">
+        <img src="images/chamber-logo.webp" alt="Chamber of Commerce Logo">
+    </div>
+
+    <div class="visit-us">
+        <h3>Visit Us</h3>
+        <p>44933 Fern Avenue, Lancaster, CA 93534<br>
+        Hours: 8:00 am - 5:00 pm, Monday - Friday<br>
+        Phone: 661-723-6000</p>
+
+        <h4>Jessica Sorensen</h4>
+        <p>Chamber of Commerce project WDD 230</p>
+        <div id="lastModified"> Modified Date</div>
+    </div>
+   
+    <section class="subscribe-form">
+        <h2>Subscribe to Our Newsletter</h2>
+        <form action="#" method="post" id="subscriptionForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+    </div>
+  </footer>
+
+  <section class="google-map">
+    <div class="map-container">
+      <iframe title="Google Map of Lancaster,CA" 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3315.6781182651097!2d-118.148105!3d34.6423554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c25ac8f524da3f%3A0x38c8d4474fa429dd!2sAntelope%20Valley%20Chambers%20of%20Commerce!5e0!3m2!1sen!2sus!4v1643956600635!5m2!1sen!2sus"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+  </section>
+
+  <script src="scripts/header-scroll.js"></script>
+  <!-- <script src="scripts/currentdate.js"></script> -->
+  <script src="scripts/hamburger-menu.js"></script>
+  <script src="scripts/modifidedate.js"></script>
+  <!-- <script src="scripts/dark-mode.js"></script> -->
+  <script src="scripts/overlay.js"></script>
+
+</body>
+</html>
