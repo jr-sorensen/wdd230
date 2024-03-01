@@ -93,6 +93,7 @@
             <!-- Membership Level Selection -->
             <label for="membershipLevel" class="form-label">Membership Level:</label>
             <select id="membershipLevel" name="membershipLevel" required class="form-input">
+                <option value="" disabled selected hidden>Select Membership Level</option>
                 <option value="1">Base Membership</option>
                 <option value="2">Bronze Membership</option>
                 <option value="3">Silver Membership</option>
@@ -101,7 +102,7 @@
     
             <!-- Business/Organization Description -->
             <label for="organizationDescription" class="form-label">Business/Organization Description:</label>
-            <textarea id="organizationDescription" name="organizationDescription" class="form-input"></textarea>
+            <textarea id="organizationDescription" name="organizationDescription" required class="form-input"></textarea>
     
             <!-- Hidden Field for Date/Time -->
             <input type="hidden" id="formLoadDateTime" name="formLoadDateTime" class="form-input">
