@@ -877,7 +877,7 @@ body {
 }
 
 .back-to-home {
-  background-color: var(--secondary-color);
+  background-color: var(--tertiary-color);
   color: white;
   padding: 15px 30px;
   border-radius: 8px;
