@@ -130,14 +130,14 @@ header {
   display: block;
 } */
 
-/* Styles for the hero container */
+
 .hero {
   position: relative;
   max-width: 100%;
   overflow: hidden;
 }
 
-/* Styles for the text overlays */
+
 
 
 .small-overlay {
@@ -155,10 +155,10 @@ header {
   padding: 10px;
 }
 
-/* Additional styling for the img element */
+
 .hero img {
-  width: 100%; /* Make sure the image fills its container */
-  height: auto; /* Maintain the image's aspect ratio */
+  width: 100%; 
+  height: auto; 
 }
 
 
@@ -808,8 +808,8 @@ body {
   max-width: 400px;
   text-align: left;
   margin: auto;
-  font-family: var(--paragraph-font); /* Apply paragraph font */
-  border: 2px solid var(--accent-color); /* Add border */
+  font-family: var(--paragraph-font); 
+  border: 2px solid var(--accent-color); 
 }
 
 .membership-benefits h2 {
@@ -818,17 +818,17 @@ body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   margin-bottom: 15px;
   font-size: 20px;
-  font-family: var(--heading-font); /* Apply heading font */
+  font-family: var(--heading-font); 
 }
 
 .membership-benefits p {
   color: var(--tertiary-color);
   margin-bottom: 10px;
   font-size: 14px;
-  font-family: var(--paragraph-font); /* Apply paragraph font */
+  font-family: var(--paragraph-font); 
 }
 
-/* Styled list items */
+
 .membership-benefits ul {
   list-style-type: none;
   padding: 0;
@@ -838,14 +838,14 @@ body {
 .membership-benefits ul li {
   margin-bottom: 8px;
   font-size: 12px;
-  font-family: var(--paragraph-font); /* Apply paragraph font */
+  font-family: var(--paragraph-font);
 }
 
-/* Highlight membership levels */
+
 .membership-benefits .membership-level {
   font-weight: bold;
   color: var(--accent-color);
-  border-bottom: 1px solid var(--accent-color); /* Add border to each list item */
+  border-bottom: 1px solid var(--accent-color); 
 }
 
 
@@ -890,4 +890,4 @@ body {
   cursor: pointer;
 }
 
-/* Add the rest of your existing styles below this point */
+

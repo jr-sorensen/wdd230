@@ -31,14 +31,14 @@
       }
       body {
         display: grid;
-        grid-template-columns: 1fr; /* Change to 1fr for a single column layout */
-        gap: 20px;
+        grid-template-columns: 1fr; 
+        gap: 5px;
       }
     
       main {
         display: grid;
-        grid-template-columns: 1fr; /* Change to 1fr for a single column layout */
-        gap: 20px;
+        grid-template-columns: 1fr; 
+        gap: 5px;
       }
       
       .stats {
