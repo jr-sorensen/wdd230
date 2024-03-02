@@ -1,19 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var lastModifiedDate = document.lastModified;
-    var modificationDateElement = document.getElementById('modificationDate');
+    // Handle modification date in the first HTML
+    var modificationDateElement = document.getElementById('lastModified');
     if (modificationDateElement) {
-        modificationDateElement.textContent = 'Page Last Modified: ' + lastModifiedDate;
+        var lastModifiedDate = document.lastModified;
+        modificationDateElement.textContent = 'Modified Date: ' + lastModifiedDate;
     }
-});
 
-document.addEventListener('DOMContentLoaded', function () {
     var formLoadDateTimeField = document.getElementById('formLoadDateTime');
-    var submissionTimeSpan = document.getElementById('submissionTime');
 
-    if (formLoadDateTimeField && submissionTimeSpan) {
+    if (formLoadDateTimeField) {
         formLoadDateTimeField.value = Date.now();
-
-        var submissionTime = new Date().toLocaleString();
-        submissionTimeSpan.textContent = submissionTime;
     }
 });
