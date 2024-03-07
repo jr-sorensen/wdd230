@@ -1,0 +1,114 @@
+
+{
+  "lessons": [
+    {
+      "number": "01",
+      "activities": [
+        {
+          "title": "Holy Layout",
+          "url": "week01/holygrail.html"
+        },
+        {
+          "title": "JS Pen",
+          "url": "scripts/getdates.js"
+        }
+      ]
+    },
+    {
+      "number": "02",
+      "activities": [
+        {
+          "title": "Media Query",
+          "url": "lesson02/media-query.html"
+        },
+        {
+          "title": "Design Principles Document",
+          "url": "lesson02/design-principles.html"
+        }
+      ]
+    },
+    {
+      "number": "03",
+      "activities": [
+        {
+          "title": "Combinator Exercise",
+          "url": "lesson03/combinator.html"
+        },
+        {
+          "title": "CSS Pseudo-elements CodePen Activity",
+          "url": "https://codepen.io/jr-sorensen/pen/vYPewvd"
+        },
+        {
+          "title": "Responsive Hamburger Menu CodePen Activity",
+          "url": "https://codepen.io/jr-sorensen/pen/KKEXjww"
+        }
+      ]
+    },
+    {
+      "number": "04",
+      "activities": [
+        {
+          "title": "Pseudo-Class Fun CodePen Activity",
+          "url": "https://codepen.io/jr-sorensen/pen/vYPRYPR"
+        }
+      ]
+    },
+    {
+      "number": "05",
+      "activities": [
+        {
+          "title": "BoM Favorite Chapters Application",
+          "url": "lesson05/bom.html"
+        }
+      ]
+    },
+    {
+      "number": "06",
+      "activities": [
+        {
+          "title": "WebP",
+          "url": "lesson06/images/landscape.webp"
+        }
+      ]
+    },
+    {
+      "number": "07",
+      "activities": [
+        {
+          "title": "Lazy Loading",
+          "url": "lesson07/lazyload.html"
+        },
+        {
+          "title": "BoM- localStorage",
+          "url": "lesson07/bom.html"
+        }
+      ]
+    },
+    {
+      "number": "08",
+      "activities": [
+        {
+          "title": "HTML Table",
+          "url": "lesson08/tablebuild.html"
+        },
+        {
+          "title": "Form Build Exercise",
+          "url": "lesson08/index.html"
+        }
+      ]
+    },
+    {
+      "number": "09",
+      "activities": [
+        {
+          "title": "JSON code",
+          "url": "lesson09/new-ward-members.json"
+        },
+        {
+          "title": "Prophets API Activity",
+          "url": "lesson09/prophets.html"
+        }
+      ]
+    }
+  ]
+}
