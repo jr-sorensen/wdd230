@@ -503,7 +503,9 @@ body.dark-mode header {
   background-color: #333;
   color: white;
 }
-
+body.dark-mode h1{
+  background-color: #000000;
+}
 body.dark-mode .navbar {
   background-color: #333;
   color: white;
@@ -634,6 +636,7 @@ input:checked + .slider:before {
 }
 
 h1 {
+  background-color: #FFB703;
   margin-top: 20px;
   align-items: center;
   text-align: center;
@@ -891,3 +894,72 @@ body {
 }
 
 
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.chamber-members {
+  margin:20px;
+  padding:10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.member {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.member:hover {
+  transform: scale(1.05);
+}
+
+.member img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.member h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  
+}
+
+.member p {
+  margin: 0;
+}
+
+.member a {
+  color: #104f7a;
+  text-decoration: none;
+}
+
+.member a:hover {
+  text-decoration: underline;
+}
+body.dark-mode .member {
+  border-color: #555;
+  background-color: #1b1b1b;
+  color: #fff;
+}
+body.dark-mode .member a {
+  color: #c4e0ff;
+}
+body.dark-mode .member a:hover {
+  text-decoration-color: #c4e0ff;
+}
