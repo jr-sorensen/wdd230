@@ -435,7 +435,7 @@
           }
 
           .chamber-members.grid-view .member {
-            width: 100%; /* Adjust the width for smaller screens */
+            width: 90%; 
           }
           
           .list-view .list-member {

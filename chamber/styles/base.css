@@ -913,7 +913,7 @@ body {
   gap: 20px;
   justify-content: center;
 }
-/* Styles for the grid view */
+
 chamber-members.grid-view {
   width: 100%;
 }
@@ -955,7 +955,7 @@ chamber-members.grid-view {
   text-decoration: underline;
 }
 
-/* Styles for the list view */
+
 chamber-members.list-view {
   width: 100%;
 }

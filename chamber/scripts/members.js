@@ -34,10 +34,9 @@ document.addEventListener("DOMContentLoaded", function () {
         membersDiv.innerHTML = membersHTML;
       }
 
-      // Initial render
       renderMembers("grid");
       membersDiv.classList.add("grid-view");
-      // Toggle between grid and list views
+
       function toggleView(event) {
         const viewType = event.target.id;
         renderMembers(viewType);
