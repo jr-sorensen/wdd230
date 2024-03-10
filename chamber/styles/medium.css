@@ -1,13 +1,13 @@
 @media (min-width: 601px) and (max-width: 1199px) {
   body {
     display: grid;
-    grid-template-columns: 1fr; 
+    
     gap: 20px;
   }
 
   main {
     display: grid;
-    grid-template-columns: 1fr;
+    
     gap: 20px;
   }
   .hamburger {
@@ -359,6 +359,19 @@ body.dark-mode .sidebar .message {
   body.dark-mode th {
     background-color: #d5d5d5;
     color: rgb(0, 0, 0);
+  }
+
+
+  .list-view .list-member {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .list-view .list-member h2,
+  .list-view .list-member p,
+  .list-view .list-member a {
+    width: 100%;
+    margin-bottom: 8px;
   }
 
 }

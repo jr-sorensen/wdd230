@@ -431,6 +431,22 @@
           }       
           .membership-benefits {
             margin-bottom: 10px;
+        
           }
 
+          .chamber-members.grid-view .member {
+            width: 100%; /* Adjust the width for smaller screens */
+          }
+          
+          .list-view .list-member {
+            flex-direction: column;
+            align-items: flex-start;
+          }
+        
+          .list-view .list-member h2,
+          .list-view .list-member p,
+          .list-view .list-member a {
+            width: 100%;
+            margin-bottom: 8px;
+          }
 }
