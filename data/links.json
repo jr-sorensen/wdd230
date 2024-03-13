@@ -2,7 +2,7 @@
 {
   "lessons": [
     {
-      "number": "01",
+      "number": " 01 ",
       "activities": [
         {
           "title": "Holy Layout",
@@ -15,7 +15,7 @@
       ]
     },
     {
-      "number": "02",
+      "number": " 02 ",
       "activities": [
         {
           "title": "Media Query",
@@ -28,7 +28,7 @@
       ]
     },
     {
-      "number": "03",
+      "number": " 03 ",
       "activities": [
         {
           "title": "Combinator Exercise",
@@ -45,7 +45,7 @@
       ]
     },
     {
-      "number": "04",
+      "number": " 04 ",
       "activities": [
         {
           "title": "Pseudo-Class Fun CodePen Activity",
@@ -54,7 +54,7 @@
       ]
     },
     {
-      "number": "05",
+      "number": " 05 ",
       "activities": [
         {
           "title": "BoM Favorite Chapters Application",
@@ -63,7 +63,7 @@
       ]
     },
     {
-      "number": "06",
+      "number": " 06 ",
       "activities": [
         {
           "title": "WebP",
@@ -72,7 +72,7 @@
       ]
     },
     {
-      "number": "07",
+      "number": " 07 ",
       "activities": [
         {
           "title": "Lazy Loading",
@@ -85,7 +85,7 @@
       ]
     },
     {
-      "number": "08",
+      "number": " 08 ",
       "activities": [
         {
           "title": "HTML Table",
@@ -98,7 +98,7 @@
       ]
     },
     {
-      "number": "09",
+      "number":  "09 ",
       "activities": [
         {
           "title": "JSON code",
@@ -109,6 +109,17 @@
           "url": "lesson09/prophets.html"
         }
       ]
+    },
+    {
+      "number": " 10 ",
+      "activities": [
+        {
+          "title": "Weather API activity",
+          "url": "lesson10/weather.html"
+        }
+     
+      ]
     }
   ]
+
 }
