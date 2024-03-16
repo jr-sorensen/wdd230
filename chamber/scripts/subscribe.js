@@ -4,3 +4,5 @@ document.getElementById('subscriptionForm').addEventListener('submit', function 
   
     console.log('Subscription form submitted!');
 });
+
+

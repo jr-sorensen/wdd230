@@ -211,7 +211,7 @@ header {
 .event-card {
   width: 200px;
   height: 300px;
-  background-color: #f0f0f0;
+  background-color: #FFB703;
   margin: 20px;
   padding: 15px;
   display: inline-block;
@@ -226,6 +226,7 @@ header {
 
 .event-card h3 {
   margin-bottom: 10px;
+  color: #023047;
 }
 
 .event-squares p {
@@ -357,24 +358,38 @@ h2 {
   height: 100vh;
 }
 
+.current-weather-info .temperature {
+  font-size: 30px;
+}
+.weather-card h2{
+  font-size: 30px;
+  text-shadow: #000000;
 
+}
 .weather-card-header {
   background-color: #FFB703;
   color: #023047;
   padding: 5px;
 }
+.weather-card h4{
+  font-size: 24px;
+  text-align: center;
+  background-color: rgba(33, 158, 188, 0.2);
+}
 
 .weather-info {
   padding: 10px;
 }
-
+.day-name{
+  font-weight: bold;
+}
 .temperature {
-  font-size: 24px;
+  font-size: 16px;
   font-weight: bold;
 }
 
 .condition {
-  margin-top: 10px;
+  margin-bottom: 20px;
   font-size: 16px;
 }
 
@@ -1019,3 +1034,26 @@ body.dark-mode .list-view .list-member {
 body.dark-mode .chamber-members.grid-view .member{
   background-color: #141414;
 }
+
+#meetGreetBanner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--background-color); /* Red color for visibility */
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#meetGreetBanner p {
+  margin: 0;
+}
+
+#closeBanner {
+  background-color: var(--tertiary-color); /* Red color for visibility */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;}
