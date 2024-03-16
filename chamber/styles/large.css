@@ -92,7 +92,7 @@
         gap: 20px;
       }
       .sidebar-container {
-        grid-column: 1fr;
+        
         max-width: 50%;
       }
     
@@ -108,7 +108,7 @@
     
       
     .image-content {
-      grid-column: 1fr;
+      
       align-items: center;
       justify-content: space-around;
       gap: 10px; /* Add gap between image containers */
