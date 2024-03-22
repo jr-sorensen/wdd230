@@ -7,7 +7,7 @@
 
   main {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 20px;
   }
 
@@ -20,13 +20,13 @@
   }
   .join-chamber,
   .weather-container {
-    grid-row: 3 /* Span two columns */
+    grid-row: 3 
   }
 
   .highlights-section,
   .spotlights-section {
     grid-column: span 2;
-    width: 100%; /* Span the page width */
+    width: 100%;
   }
 
   .hamburger {
@@ -38,20 +38,20 @@
     font-size: 18px;
   }
   .circle-buttons {
-    text-align: center; /* Center the circle buttons */
-    margin-top: 20px; /* Add some top margin for spacing */
+    text-align: center; 
+    margin-top: 20px;
   }
 
   .circle-button {
-    display: inline-block; /* Display circle buttons in a row */
-    width: 100px; /* Adjust width as needed */
-    height: 100px; /* Adjust height as needed */
-    border-radius: 50%; /* Make the buttons circular */
-    background-color: #023047; /* Background color for the buttons */
-    color: #fff; /* Text color */
-    font-size: 16px; /* Font size for button text */
-    line-height: 100px; /* Center align text vertically */
-    margin: 0 10px; /* Add some margin between buttons */
+    display: inline-block; 
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    background-color: #023047; 
+    color: #fff;
+    font-size: 16px; 
+    line-height: 100px;
+    margin: 0 10px; 
   }
 .upcoming-events{
   margin-top: -150px;
@@ -60,7 +60,7 @@
   .event-card {
       width: 200px;
       height: 300px;
-      background-color: #f0f0f0;
+      background-color: #FFB703;
       margin: 20px;
       padding: 15px;
       display: inline-block;

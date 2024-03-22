@@ -130,29 +130,29 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
-        justify-content: center;
+        justify-content: center; /* Vertical alignment */
+        align-items: center; /* Horizontal alignment */
         margin: 20px 0;
         text-align: center;
     }
-
+    
     .spotlight-card {
-        width: 100%;
+        width: 80%; /* Adjust the width as needed */
         box-sizing: border-box;
         border: 1px solid #ddd;
         border-radius: 8px;
         text-align: center;
-        margin: 20px 0;
         padding: 20px;
     }
-
+    
     .spotlight-card h3 {
         margin-top: 0;
     }
-
+    
     .spotlight-card p {
         margin: 10px 0;
     }
-
+    
     .spotlight-card img {
         max-width: 100%;
         border-radius: 8px;
@@ -170,7 +170,8 @@
 
     .weather-
     .footer-logo img {
-        max-width: 150px;
+        max-width: 50%;
+        height: auto;
     }
 
     .visit-us {
@@ -258,7 +259,7 @@
         position: relative;
         overflow: hidden;
         width: 400px; 
-        height: 0;
+        height: auto;
         padding-bottom: 75%; 
         margin-bottom: 20px;
         border: 1px solid #ccc;

@@ -48,28 +48,28 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     .catch(error => console.error("Error fetching JSON:", error));
 });
-// Load JSON data
+
 fetch('data/members.json')
   .then(response => response.json())
   .then(data => {
-    // Filter companies with silver or gold status
+    
     const silverGoldCompanies = data.companies.filter(company => company.membership_level === "Silver" || company.membership_level === "Gold");
 
-    // Shuffle the filtered companies randomly
+    
     const shuffledCompanies = shuffleArray(silverGoldCompanies);
 
-    // Get the spotlight section
+    
     const spotlightSection = document.querySelector('.spotlights-section');
 
-    // Remove existing spotlight cards
+    
     spotlightSection.innerHTML = '';
 
-    // Iterate through the first two or three shuffled companies
+    
     const numCompaniesToShow = Math.min(shuffledCompanies.length, Math.floor(Math.random() * 2) + 2);
     for (let i = 0; i < numCompaniesToShow; i++) {
       const company = shuffledCompanies[i];
 
-      // Create elements
+      
       const spotlightCard = document.createElement('div');
       spotlightCard.classList.add('spotlight-card');
 
@@ -87,23 +87,23 @@ fetch('data/members.json')
       companyImage.alt = company.name + ' Image';
       companyImage.style.width = '50%';
 
-      // Contact information
+      
       const contactInfo = document.createElement('p');
       contactInfo.innerHTML = `<strong>Address:</strong> ${company.address}<br><strong>Phone:</strong> ${company.phone}<br><strong>Website:</strong> <a href="${company.website}">${company.website}</a>`;
 
-      // Append elements to spotlight card
+      
       spotlightCard.appendChild(companyName);
       spotlightCard.appendChild(companyDescription);
       spotlightCard.appendChild(companyImage);
       spotlightCard.appendChild(contactInfo);
 
-      // Append spotlight card to spotlight section
+      
       spotlightSection.appendChild(spotlightCard);
     }
   })
   .catch(error => console.error('Error fetching JSON:', error));
 
-// Function to shuffle array
+
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
