@@ -1,68 +1,67 @@
 {
-    "companies": [
-      {
-        "name": "Tech Innovators Inc.",
-        "address": "123 Innovation Street, Silicon Valley",
-        "phone": "+1 123-456-7890",
-        "website": "http://www.techinnovators.com",
-        "image": "images/garth-img.webp",
-        "membership_level": "Premium",
-        "additional_info": "Leading the way in cutting-edge technology solutions."
-      },
-      {
-        "name": "GreenScape Eco Solutions",
-        "address": "456 Eco Avenue, Sustainable City",
-        "phone": "+1 234-567-8901",
-        "website": "http://www.greenscapeeco.com",
-        "image": "images/hank-img.webp",
-        "membership_level": "Gold",
-        "additional_info": "Promoting environmental sustainability through innovative solutions."
-      },
-      {
-        "name": "HealthHub Wellness Group",
-        "address": "789 Vitality Street, Healthy Town",
-        "phone": "+1 345-678-9012",
-        "website": "http://www.healthhubwellness.com",
-        "image": "images/lainey-img.webp",
-        "membership_level": "Silver",
-        "additional_info": "Empowering communities to lead healthier lives."
-      },
-      {
-        "name": "Global Logistics Solutions",
-        "address": "101 Supply Chain Avenue, Logistics City",
-        "phone": "+1 456-789-0123",
-        "website": "http://www.globallogistics.com",
-        "image": "images/luke-img.webp",
-        "membership_level": "Basic",
-        "additional_info": "Connecting businesses through efficient and reliable logistics."
-      },
-      {
-        "name": "InnoCuisine Culinary Creations",
-        "address": "202 Gourmet Lane, Foodie Plaza",
-        "phone": "+1 567-890-1234",
-        "website": "http://www.innocuisine.com",
-        "image": "images/morgan-img.webp",
-        "membership_level": "Premium",
-        "additional_info": "Crafting innovative and delightful culinary experiences."
-      },
-      {
-        "name": "Financial Dynamics Corp.",
-        "address": "303 Prosperity Boulevard, Finance District",
-        "phone": "+1 678-901-2345",
-        "website": "http://www.financialdynamics.com",
-        "image": "images/paisley-img.webp",
-        "membership_level": "Gold",
-        "additional_info": "Driving financial success through dynamic strategies."
-      },
-      {
-        "name": "Artistry Studios Collective",
-        "address": "404 Creative Avenue, Artsy Town",
-        "phone": "+1 789-012-3456",
-        "website": "http://www.artistrystudios.com",
-        "image": "images/joshua-trees-medium.webp",
-        "membership_level": "Silver",
-        "additional_info": "Fostering creativity and collaboration in the art world."
-      }
-    ]
-  }
-  
+  "companies": [
+    {
+      "name": "Desert Deli",
+      "address": "2813 W Ave L, Lancaster, CA 93536",
+      "phone": "+16612068716",
+      "website": "http://thedesertdeli.com/",
+      "image": "images/desert_deli.webp",
+      "membership_level": "Gold",
+      "additional_info": "Best sandwiches in the AV!"
+    },
+    {
+      "name": "Antelope Valley Winery",
+      "address": "42041 20th St W, Lancaster, CA 93534",
+      "phone": "+16617220145",
+      "website": "http://www.avwinery.com/",
+      "image": "images/av_winery.webp",
+      "membership_level": "Silver",
+      "additional_info": "Quality wine , locally grown."
+    },
+    {
+      "name": "Antelope Valley Harley-Davidson",
+      "address": "1759 W Avenue J12, Lancaster, CA 93534",
+      "phone": "+16619485959",
+      "website": "https://www.antelopevalleyhd.com",
+      "image": "images/harleydav.webp",
+      "membership_level": "Gold",
+      "additional_info": "Over 30 years of service in the AV"
+    },
+    {
+      "name": "Sol Plaza Boutique Mall",
+      "address": "1140 Commerce Center Dr, Lancaster, CA 93534",
+      "phone": "+16617294900",
+      "website": "http://solplazashopping.com/",
+      "image": "images/sol_plaza.webp",
+      "membership_level": "Gold",
+      "additional_info": "Shop, Eat, Be Entertained"
+    },
+    {
+      "name": "Bravery Brewing Company",
+      "address": "42705 8th St W, Lancaster, CA 93534",
+      "phone": "+16619514677",
+      "website": "http://braverybrewing.com/",
+      "image": "images/bravery.webp",
+      "membership_level": "Silver",
+      "additional_info": "Indy microbrewery & tasting room with a relaxed industrial vibe."
+    },
+    {
+      "name": "Playmazing",
+      "address": "824 W Ave L 6 Suite F, Lancaster, CA 93534",
+      "phone": "+16619028176",
+      "website": "http://playmazingav.com/",
+      "image": "images/playmazing.webp",
+      "membership_level": "Gold",
+      "additional_info": "Children's Indoor Playground"
+    },
+    {
+      "name": "911 Vet Care",
+      "address": "42053 10th St W, Lancaster, CA 93534",
+      "phone": "+16618740000",
+      "website": "http://www.911vetcare.com/",
+      "image": "images/911vet.webp",
+      "membership_level": "Bronze",
+      "additional_info": "The best vetrinary care for your animals."
+    }
+  ]
+}

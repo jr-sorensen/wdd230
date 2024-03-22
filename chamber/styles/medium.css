@@ -7,34 +7,56 @@
 
   main {
     display: grid;
-    
+    grid-template-columns: repeat(2, 1fr); /* Two columns layout */
     gap: 20px;
   }
+
+
+  .hero,
+  .circle-buttons,
+  .upcoming-events {
+    grid-column: span 2;
+    width: 100%;
+  }
+  .join-chamber,
+  .weather-container {
+    grid-row: 3 /* Span two columns */
+  }
+
+  .highlights-section,
+  .spotlights-section {
+    grid-column: span 2;
+    width: 100%; /* Span the page width */
+  }
+
   .hamburger {
       display: none; 
   }
 
-  .upcoming-events {
-      padding-top: 150px;
-  }
-  .small-overlay, .large-overlay {
-        display: none;
-    }
 
-    .medium-overlay {
-        position: absolute;
-        top: 10%;
-        left: 10%;
-        transform: translate(-50%, -50%);
-        color: white;
-        font-size: 24px;
-        font-weight: bold;
-        background-color: rgba(0, 0, 0, 0.7);
-        padding: 15px;
-        border-radius: 8px;
-        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-        z-index: 1;
-    }
+  .overlay {
+    font-size: 18px;
+  }
+  .circle-buttons {
+    text-align: center; /* Center the circle buttons */
+    margin-top: 20px; /* Add some top margin for spacing */
+  }
+
+  .circle-button {
+    display: inline-block; /* Display circle buttons in a row */
+    width: 100px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+    border-radius: 50%; /* Make the buttons circular */
+    background-color: #023047; /* Background color for the buttons */
+    color: #fff; /* Text color */
+    font-size: 16px; /* Font size for button text */
+    line-height: 100px; /* Center align text vertically */
+    margin: 0 10px; /* Add some margin between buttons */
+  }
+.upcoming-events{
+  margin-top: -150px;
+}
+
   .event-card {
       width: 200px;
       height: 300px;
@@ -56,16 +78,16 @@
   }
 
   .button {
+      grid-column: span 2;
       margin-top: 20px;
       padding: 10px 15px;
-      background-color: #219EBC;
+      background-color: #8ECAE6;
       color: black;
       border: none;
       cursor: pointer;
       border-radius: 4px;
       font-size: 16px;
-      display: block;
-      margin: auto;
+      align-content: center;
   }
 
   .button:hover {
@@ -73,9 +95,10 @@
   }
 
   .join-chamber {
+
       display: flex;
       align-items: center;
-      gap: 20px;
+      gap: 10px;
   }
 
   .join-chamber div {
@@ -83,12 +106,13 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      text-align: center;
   }
 
   .join-chamber img {
       padding: 20px;
-      width: 300px;
-      height: 200px;
+      max-width: 400px;
+      height: auto;
       object-fit: cover;
   }
 
@@ -98,7 +122,7 @@
       align-items: center;
   }
 
-  h2 {
+  h2 {grid-column: span 2;
       text-align: center;
       align-content: center;
   }
@@ -131,25 +155,30 @@
       gap: 20px;
       justify-content: center;
       margin: 20px 0;
-      text-align: center;
-      margin: 20px 0;
-  }
 
+  }
+.spotlights-section h2{
+  text-align: center;
+  font-size: 16px;
+}
   .spotlight-card {
-      width: 200px;
+      max-width: 200px;
       padding: 20px;
-      border: 1px solid #ddd;
+      border: 1px solid #023047;
       border-radius: 8px;
       text-align: center;
       margin: 20px auto;
   }
 
   .spotlight-card h3 {
+    text-align: center;
       margin-top: 0;
+      color: #023047;
   }
 
   .spotlight-card p {
       margin: 10px 0;
+      font-size: 10px;
   }
 
   .spotlight-card img {
@@ -208,7 +237,7 @@
   .location {
       margin-top: 10px;
       font-size: 14px;
-      color: #888;
+      color: #000000;
   }
 
   .footer-container {

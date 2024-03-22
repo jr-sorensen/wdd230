@@ -1,17 +1,11 @@
+const overlays = document.querySelectorAll('.small-overlay, .medium-overlay, .large-overlay');
 
-  const overlays = document.querySelectorAll('.overlay');
+function updateOverlayVisibility() {
+  overlays.forEach(overlay => {
+    const isVisible = window.getComputedStyle(overlay).display !== 'none';
+    overlay.style.display = isVisible ? 'block' : 'none';
+  });
+}
 
-
-  function updateOverlayVisibility() {
-    overlays.forEach(overlay => {
-      const isVisible = window.getComputedStyle(overlay).display !== 'none';
-      overlay.style.display = isVisible ? 'block' : 'none';
-    });
-  }
-
-
-  window.addEventListener('resize', updateOverlayVisibility);
-
-
-  window.addEventListener('load', updateOverlayVisibility);
-
+window.addEventListener('resize', updateOverlayVisibility);
+window.addEventListener('load', updateOverlayVisibility);

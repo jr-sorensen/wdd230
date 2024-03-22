@@ -103,33 +103,11 @@ header {
   background-color: var(--text-color);
 }
 
-/* .hero {
+.hero {
   position: relative;
-  text-align: center;
+  max-width: 100%;
   overflow: hidden;
 }
-
-.hero h1 {
-  position: absolute;
-  top: 10%;
-  left: 25%;
-  transform: translate(0, 0);
-  font-size: 1.5em;
-  color: White;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  opacity: 0.8;
-}
-
-.hero:hover h1 {
-  opacity: 1;
-}
-
-.hero img {
-  width: 100%;
-  height: auto;
-  display: block;
-} */
-
 
 .hero {
   position: relative;
@@ -137,22 +115,21 @@ header {
   overflow: hidden;
 }
 
-
-
-
-.small-overlay {
+.overlay {
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.7);
-  padding: 10px;
-}
-
-.medium-overlay {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 10px;
-}
-
-.large-overlay {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 10px;
+  padding: 10px; /* Adjust padding as needed */
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px; /* Adjust border radius as needed */
+  z-index: 1000;
+  width: 80%; /* Set the width as a percentage of the container width */
+  max-width: 90%; /* Limit the maximum width */
+  font-size: 30px;
 }
 
 
@@ -233,10 +210,10 @@ header {
   margin: 0;
 }
 
-button {
+.button {
   margin-top: 20px;
   padding: 10px 15px;
-  background-color: #219EBC;
+  background-color: #8ECAE6;
   color: black;
   border: none;
   cursor: pointer;
@@ -318,17 +295,20 @@ h2 {
 }
 
 .spotlight-card {
-  width: 200px;
+  max-width: 400px;
   padding: 20px;
   background-color: white;
   border: 5px solid #023047;
   border-radius: 8px;
   text-align: center;
   margin: 20px auto;
+  align-items: center;
+  justify-self: center;
 }
 
 .spotlight-card h3 {
   margin-top: 0;
+  color: #023047;
 }
 
 .spotlight-card p {
@@ -355,7 +335,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+ 
 }
 
 .current-weather-info .temperature {
@@ -396,7 +376,7 @@ h2 {
 .location {
   margin-top: 10px;
   font-size: 14px;
-  color: #888;
+  color: #151515;
 }
 footer {
   background-color: #023047;
@@ -515,11 +495,11 @@ body.dark-mode {
 }
 
 body.dark-mode header {
-  background-color: #333;
+  background-color: #151515;
   color: white;
 }
-body.dark-mode h1{
-  background-color: #000000;
+body.dark-mode h1 {
+  background-color: #222222;
 }
 body.dark-mode .navbar {
   background-color: #333;
@@ -527,30 +507,35 @@ body.dark-mode .navbar {
 }
 
 body.dark-mode .nav-link {
-  
   color: white;
 }
 
 body.dark-mode .bar {
   background-color: white;
 }
+
+body.dark-mode main{
+  background-color: #020202;
+}
 body.dark-mode .event-card {
-  background-color: #333;
+  background-color: #000000;
   color: white;
 }
 
 body.dark-mode .highlight-card {
-  background-color: #555;
+  background-color: #000000;
   color: #fff;
 }
 
 body.dark-mode .spotlight-card {
-  background-color: #333;
+  background-color: #000000;
   border-color: #FB8500;
   color: white;
 }
-body.dark-mode h2{
+body.dark-mode h2, body.dark-mode p, body.dark-mode #currentDate, 
+body.dark-mode .circle-button{
   color:white;
+  background-color: #1c1c1c;
 }
 
 body.dark-mode footer {
@@ -559,9 +544,11 @@ body.dark-mode footer {
 }
 
 body.dark-mode .switch {
-  background-color: #333;
+  background-color: #020202;
 }
-
+body.dark-mode .event-card h3 , .spotlight-card h3{
+  color:white;
+}
 body.dark-mode .switch .slider {
   background-color: #ccc;
 }
@@ -571,7 +558,7 @@ body.dark-mode .switch .slider:before {
 }
 
 .switch.dark-mode {
-  background-color: #333; 
+  background-color: #1f1f1f; 
 }
 
 .switch.dark-mode .slider {
@@ -582,12 +569,14 @@ body.dark-mode .switch .slider:before {
   background-color: white;
 }
 body.dark-mode .weather-card {
-  background-color: #333;
+  background-color: #000000;
   color: white;
 }
-
+body.dark-mode .location {
+color: white;
+}
 body.dark-mode .weather-card-header {
-  background-color: #555;
+  background-color: #1c1c1c;
 }
 
 body.dark-mode .footer-container {

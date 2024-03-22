@@ -32,7 +32,7 @@
        
         <ul class="nav-menu">
           <li class="nav-item">
-            <a href="index.html" class="nav-link">Home</a>
+            <a href="" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
             <a href="discover.html" class="nav-link">Discover</a>
@@ -70,28 +70,15 @@
       </label>
     </div>
 
-    <!-- <div class="hero">
-      <div class="overlay-container">
-        <picture>
-          
-          <source srcset="images/small.webp" media="(max-width: 600px)">
-         
-          <source srcset="images/medium.webp" media="(max-width: 1000px)">
-          
-          <source srcset="images/large.webp" media="(max-width: 1600px)">
-          
-          <img src="images/large.webp" alt="Lesson 6 Image" width="1600" height="1067">
-        </picture>
-      </div>
-    
-      <div class="small-overlay">small</div>
-      <div class="medium-overlay">medium</div>
-      <div class="large-overlay">large</div>
-    </div> -->
-   <section class="hero">
-  <h1>City of Lancaster Chamber of Commerce</h1>
-    <img src="images/stadium.jpg" alt="Lancaster Stadium">
-  </section> 
+    <div class="hero">
+      <picture>
+        <source srcset="images/stadium_small.webp" media="(max-width: 400px)" loading="lazy">
+        <source srcset="images/stadium_medium.webp" media="(max-width: 800px)" loading="lazy">
+        <source srcset="images/stadium.webp" media="(max-width: 1280px)" loading="lazy">
+        <img src="images/stadium.webp" alt="Jethawks Stadium" width="1280" height="654">
+      </picture>
+      <div class="overlay">City of Lancaster Chamber of Commerce</div>
+    </div>
 
 
     <section class="circle-buttons">
@@ -115,6 +102,7 @@
 
   <section class="upcoming-events">
     <h2>Upcoming Events</h2>
+    <button>View All Events</button>
     <div id="currentDate">Current Date and Beyond</div>
 
 
@@ -135,14 +123,14 @@
     </div>
   </section>
 
-  <button>View All Events</button>
+  
 
   <section class="join-chamber">
     <div class="joshua-trees">
         <picture>
-          <source srcset="images/joshua-trees-small.webp" media="(max-width: 200px)">
-          <source srcset="images/joshua-trees-medium.webp" media="(max-width: 400px)">
-          <source srcset="images/joshua-trees-large.webp" media="(max-width: 800px)">
+          <source srcset="images/joshua-trees-small.webp" media="(max-width: 200px)" loading="lazy">
+          <source srcset="images/joshua-trees-medium.webp" media="(max-width: 400px)" loading="lazy">
+          <source srcset="images/joshua-trees-large.webp" media="(max-width: 800px)" loading="lazy">
           <img src="images/joshua-trees-large.webp" alt="Lesson 6 Image" width="800" height="500">
         </picture>
       </div>
@@ -153,31 +141,31 @@
     <p>Information on why it's good to join the Chamber of Commerce.</p></div>
   </section>
 
-  <h2>Company Spotlights</h2>
+ 
   <div class="highlights-section">
     <div class="highlight-card">Art</div>
     <div class="highlight-card">Food</div>
     <div class="highlight-card">Activities</div>
   </div>
-
+<h2>Company Spotlights</h2>
   <div class="spotlights-section">
-
+   
     <div class="spotlight-card">
-        <h3>Business 1</h3>
-        <p>Spotlight #1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <img src="images/business1.jpg" alt="Business 1 Image">
+        <h3>Business title</h3>
+        <p>Spotlight </p>
+        <img src="images/business1.jpg" alt="Business Image">
     </div>
 
     <div class="spotlight-card">
-        <h3>Business 2</h3>
-        <p>Spotlight #2 - Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <img src="images/business2.jpg" alt="Business 2 Image">
+        <h3>Business title</h3>
+        <p>Spotlight </p>
+        <img src="images/business2.jpg" alt="Business  Image">
     </div>
 
     <div class="spotlight-card">
-        <h3>Business 3</h3>
-        <p>Spotlight #3 - Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <img src="images/business3.jpg" alt="Business 3 Image">
+        <h3>Business title</h3>
+        <p>Spotlight</p>
+        <img src="images/business3.jpg" alt="Business  Image">
     </div>
   </div>
   <div class="weather-container">
@@ -259,14 +247,15 @@
     </div>
   </section>
 
-  <script src="scripts/header-scroll.js"></script>
+  
   <script src="scripts/currentdate.js"></script>
-  <script src="scripts/windchill.js"></script>
+  <script src="scripts/windchill.js" defer></script>
   <script src="scripts/hamburger-menu.js"></script>
-  <script src="scripts/modifidedate.js"></script>
+  <script src="scripts/modifidedate.js" defer></script>
   <script src="scripts/dark-mode.js"></script>
   <script src="scripts/overlay.js"></script>
   <script src="scripts/banner.js"></script>
+  <script src="scripts/members.js" defer></script>
 
 </body>
 </html>
