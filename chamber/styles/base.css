@@ -115,7 +115,7 @@ header {
   overflow: hidden;
 }
 
-.overlay {
+.overlay h1 {
   position: absolute;
   top: 8%;
   left: 50%;
