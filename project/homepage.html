@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jessica Sorensen" >
+    <meta name="description" content="WDD 230 - Chamber home page build." >
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <title>Scoots Rental Company</title>
+
+    <meta property="og:title" content="Scoots - Cozumel scooter rental company">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://commons.wikimedia.org/wiki/File:San_Miguel_de_Cozumel,_Cozumel_Island,_Quintana_Roo,_Mexico_-_Drugstore.jpg">
+    <meta property="og:url" content="https://www.facebook.com/MyCozumel/">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+</head>
+<body>
+    
+    <header>
+        <div id="temperature-message" class="temperature-message">
+            <span id="temperature-value"></span>
+            <span class="close-button" onclick="closeTemperatureMessage()">&times;</span>
+        </div>
+        
+    </div>
+    
+        <nav>
+            <div class="container">  
+                <div class="menu-container">
+                    <ul class="menu">
+                        <li><a>Home</a></li>
+                        <li><a class="nav-link" href="rentals.html">Rentals</a></li>
+                        <li><img src="images/project_logo.png" alt="Scoots Logo" width="150" height="150"></li>
+                        <li><a class="nav-link" href="reservations.html">Reservations</a></li>
+                        <li><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+            <div id="logo-pic">
+                <img src="images/project_logo.png" alt="Scoots Logo" width="150" height="150">
+            </div>
+        </nav>
+    </header>
+    
+    <div class="hero">
+        <picture>
+            <source srcset="images/hero_small.webp" media="(max-width: 600px)">
+            <source srcset="images/hero_med.webp" media="(max-width: 1000px)">
+            <source srcset="images/hero_large.webp" media="(max-width: 1400px)" >
+            <img src="images/hero_large.webp" alt="Cozumel Panoramic Veiw" width="1400" height="322" >
+        </picture>
+        <div class="hero-text">
+            <h1>Welcome   to   Scoots</h1>
+            <p>Your ultimate destination for unforgettable adventures in Cozumel!</p>
+        </div>
+    </div>
+
+    <main class="homepage">
+        <section id="about">
+            <p>At Scoots, we offer an exhilarating way to experience the breathtaking beauty of Cozumel with our diverse range of rental options. 
+                From sleek and nimble Honda motor scooters perfect for zipping through the island's vibrant streets to rugged and reliable side-by-side 
+                ATVs designed for off-road adventures, we cater to every explorer's desires. What makes us truly awesome is our commitment to providing hassle-free rental services coupled with 
+                our intimate knowledge of Cozumel's hidden gems. Whether you're a local looking for a convenient mode of transportation, a spontaneous tourist
+                 eager to explore, or a cruise-based traveler seeking a memorable excursion, we've got you covered. With our user-friendly rental process, 
+                 top-notch equipment, and friendly customer service, we ensure that your island adventure is not only unforgettable but also effortlessly enjoyable.
+                So, hop on one of our vehicles, soak in the sun-kissed scenery, and let the winds of Cozumel carry you on an unforgettable journey of discovery and delight.</p>
+        </section>
+        <section id="homepage-rentals">
+            <h2>Some of Our Rentals</h2>
+            <p>Explore the island of Cozumel in style with our range of motor scooters and side-by-side ATVs. Whether you're cruising through town or venturing off-road, ~Scoots~ has the perfect rental for your adventure.</p>
+            <div class="rental-type">
+                <picture>
+                    <source srcset="images/home_scooter_small.webp" media="(max-width: 200px)">
+                    <source srcset="images/home_scooter_med.webp" media="(max-width: 400px)">
+                    <source srcset="images/home_scooter.webp" media="(max-width: 800px)" >
+                    <img src="images/home_scooter.webp" alt="Scooters in Cozumel" width="800" height="571" loading="lazy">
+                </picture>
+                <h3>Honda Motor Scooters</h3>
+                <ul>
+                    <li><strong>Honda Metropolitan (49cc) - 1 person</strong>: Perfect for zipping around town solo, the Metropolitan offers easy maneuverability and fuel efficiency.</li>
+                    <li><strong>Honda Dio (110cc) - 2 person</strong>: Ideal for couples or friends exploring the island together, the Dio provides a comfortable ride for two.</li>
+                    <li><strong>Honda PCX150 (149cc) - 2 person</strong>: With more power and storage space, the PCX150 is great for longer journeys with a passenger.</li>
+                </ul>
+            </div>
+            <div class="rental-type">
+                <picture>
+                    <source srcset="images/home_atv_small.webp" media="(max-width: 200px)">
+                    <source srcset="images/home_atv_med.webp" media="(max-width: 400px)">
+                    <source srcset="images/home_atv.webp" media="(max-width: 800px)" >
+                    <img src="images/home_atv.webp" alt="ATV in Cozumel" width="800" height="534" loading="lazy">
+                </picture>
+                <h3>Side-by-Side ATVs</h3>
+                <ul>
+                    <li><strong>Honda Pioneer 1000 - 4 person</strong>: Explore Cozumel's rugged terrain with friends or family in the spacious and versatile Pioneer 1000.</li>
+                </ul>
+            </div>
+            <button onclick="location.href='reservations.html'">All Rental Types Here</button>
+            <p>Visit one of our convenient rental locations near the Playa del Carmen-Cozumel Ferry dock in el Centro de Cozumel or near the Terminal Puerta Maya to start your island exploration today!</p>
+        </section> 
+        
+        <!-- Call to action to make a rental reservation -->
+        <section id ="call-weather">
+            
+        <section id="homepage_reservation">
+            <h2>Make a Reservation</h2>
+            <picture>
+                <source srcset="images/Tulum_small.webp" media="(max-width: 400px)">
+                <source srcset="images/Tulum_med.webp" media="(max-width: 600px)">
+                <source srcset="images/Tulum.webp" media="(max-width: 805px)" >
+                <img src="images/Tulum.webp" alt="Scooters in Cozumel" width="805" height="644" loading="lazy">
+            </picture>
+            <p>Ready to embark on your Cozumel adventure? Secure your rental now and get ready to hit the road!</p>
+            <button onclick="location.href='reservations.html'">Reserve Now</button>
+        </section>
+
+        <section id="weather">
+            <h2>Weather</h2>
+            <div id="current-date"></div>
+            <div id="current-weather" class="current-weather-info"></div>
+            <div id="forecast-container">
+                <ul id="day1"></ul>
+                <ul id="day2"></ul>
+                <ul id="day3"></ul>
+            </div>
+        </section>
+        
+          
+        </section>
+
+    </main>
+
+    <footer>
+       
+        <div class="contact-info">
+            <h4> Contact Us:</h4>
+            <p>123 Island Way, Cozumel, Mexico</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Email: info@scootscozumel.com</p>
+        </div>
+        
+        <div class="copyright"> 
+            <div class="social-media">
+            <a href="facebook.com"><img src="images/fb_icon.png" alt="Facebook"></a>
+            <a href="twitter.com"><img src="images/twitter.png" alt="Twitter"></a>
+        </div>
+            <p>&copy; 2024 Scoots Cozumel</p>
+            <p id="lastModified">Last modified: </p>
+        </div>
+
+       
+        
+        <img class="footer-logo" src="images/project_logo.png" alt="Footer Logo">
+    </footer>
+
+    <script src="scripts/hamburger_menu.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/modified_date.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,379 @@
+/* Media query for screens up to 699px */
+@media only screen and (max-width: 699px) {
+    /* Font import */
+    @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Paytone+One&display=swap');
+
+    /* Font styles */
+    body {
+        font-family: 'Nunito', sans-serif;
+        background-color: rgba(51, 101, 138, 0.1);
+        font-size: 12px; /* Adjust base font size */
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Paytone One', sans-serif;
+        text-align: center;
+        font-size: 15px; /* Adjust heading font size */
+    }
+
+    /* Header styles */
+    body {
+        font-family: 'Nunito', sans-serif;
+        background-color: rgba(51, 101, 138, 0.1);
+        font-size: 12px; /* Adjust base font size */
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Paytone One', sans-serif;
+        text-align: center;
+        font-size: 15px; /* Adjust heading font size */
+    }
+
+    /* Header styles */
+    header {
+        background-color: var(--charcoal);
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        border-top: 4px solid var(--hunyadi-yellow);
+        border-bottom: 4px solid var(--bright-pink-crayola);
+    }
+
+    /* Hamburger styles */
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 30px; /* Adjust width as needed */
+        height: 30px; /* Match height with logo */
+        cursor: pointer;
+        margin-left: 20px; /* Adjust the left margin */
+    }
+
+    /* Bar styles */
+    .bar {
+        width: 100%;
+        height: 2px;
+        background-color: white; /* Set the bar color */
+        margin: 2px 0; /* Adjust margin between bars */
+        transition: all 0.3s ease;
+    }
+
+    .active .bar:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+    }
+
+    .active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .active .bar:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+
+/* Navigation logo styles */
+.header .logo {
+    float: left; /* Align the logo to the left */
+}
+
+.menu {
+    display: none; /* Hide the menu by default */
+    position: absolute;
+    top: 70px; /* Adjust the distance from the top */
+    left: 0;
+    width: 100%;
+    background-color:var(--charcoal); /* Set background color to white */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack menu items vertically */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+}
+
+.menu.active {
+    display: flex; /* Show the menu when active */
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.menu li {
+    margin: 10px;
+}
+.menu li img {
+    display: none;
+}
+
+/* Display the logo in the header */
+header {
+    display: flex;
+    justify-content: space-between; /* Align items to the start and end */
+    align-items: center; /* Vertically center items */
+}
+
+header .logo {
+    margin-right: 20px; /* Adjust margin for spacing */
+}
+.menu a {
+    color: white; /* Set text color to black */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+    .hero-text h1 {
+        position: absolute;
+        top: 20%; /* Position the text vertically centered */
+        left: 50%; /* Position the text horizontally centered */
+        transform: translate(-50%, -50%); /* Move the text up and left by 50% of its own width and height */
+        font-size: 24px; /* Adjust the font size for the hero text */
+        max-width: 80%; /* Set the maximum width of the hero text */
+        text-align: center; /* Center the text */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+    }
+
+    .hero-text p {
+        display: none; /* Decrease font size for smaller screens */
+    }
+
+    .main.homepage {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Individual section styles */
+    section {
+        flex: 1 1 100%;
+        margin-bottom: 10px;
+    }
+
+    /* About section styles */
+    .homepage #about {
+        padding: 10px;
+        margin-inline: 15px;
+        text-align: justify;
+        font-size: 12px;
+    }
+
+    /* Rentals section styles */
+    .homepage #homepage-rentals {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .homepage #homepage-rentals button {
+        background-color: var(--raspberry);
+        color: white;
+        border: none;
+        padding: 10px 25px;
+        font-size: 12px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .homepage #homepage-rentals button:hover {
+        background-color: var(--bright-pink-crayola);
+        transform: scale(1.05);
+    }
+
+    .homepage #homepage-rentals h2, #homepage-rentals p {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    #homepage-rentals p {
+        font-size: 12px;
+    }
+
+    .homepage #homepage-rentals h2 {
+        font-size: 15px;
+    }
+
+    .rental-type {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Rental image styles */
+    .homepage .rental-type picture {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .homepage .rental-type img {
+        max-width: 100%;
+        max-height: 100%;
+        height: auto;
+    }
+
+ 
+
+
+    #homepage_reservation,
+    #weather {
+        flex: auto;
+        gap: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #homepage_reservation {
+        background-color: rgba(246, 174, 45, 0.1);
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+    }
+
+    #weather {
+        background-color: rgb(85, 221, 224, 0.1);
+    }
+
+    #current-weather {
+        background-color: rgba(85, 221, 224, 0.1);
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .forecast-item {
+        background-color: rgba(85, 221, 224, 0.1);
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    #forecast-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    ul {
+        flex: 1;
+        margin-bottom: 20px;
+    }
+
+    #homepage_reservation h2 {
+        color: var(--madder);
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+
+    #weather h2 {
+        color: var(--charcoal);
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+
+    #homepage_reservation img {
+        display: block;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        border-radius: 10px;
+        border: 3px solid var(--orange-pantone);
+        margin: 10px auto;
+    }
+
+    #homepage_reservation p {
+        margin-bottom: 15px;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    /* Map Box */
+    #map .map-grid {
+        display: grid;
+        grid: 1fr;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .map-container {
+        grid-column: 1fr; /* Adjust width as needed */
+    }
+    
+    .map-container iframe {
+        width: 100%;
+        height: 200px; /* Adjust height as needed */
+        border: none;
+    }
+
+/* Map Iframe */
+
+
+
+    footer {
+    background-color: var(--charcoal);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+#logo-pic img {
+    display: inline;
+    max-width: 60px; /* Set maximum width of the image */
+    max-height: 60px; /* Set maximum height of the image */
+    margin-left: 250px; /* Add left margin to position the image */
+}
+
+.contact-info {
+    text-align: center; /* Center contact info on mobile */
+    font-size: 16px; /* Adjust font size for mobile */
+}
+
+.social-media {
+    margin-top: 10px; /* Add margin for separation */
+}
+
+.footer-logo {
+    text-align: center; /* Center footer logo on mobile */
+    margin-top: 10px; /* Add margin for separation */
+}
+
+.social-media a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px; /* Add margin between social media icons */
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.copyright {
+    margin-top: 10px; /* Add margin for separation */
+    font-size: 0.8em; /* Adjust font size for mobile */
+}
+
+
+}
+
+    /* Stylize the paragraph within reservation and weather sections */

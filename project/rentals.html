@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jessica Sorensen" >
+    <meta name="description" content="WDD 230 - Chamber home page build." >
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <title>Scoots Rental Company</title>
+
+    <meta property="og:title" content="Scoots - Cozumel scooter rental company">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://commons.wikimedia.org/wiki/File:San_Miguel_de_Cozumel,_Cozumel_Island,_Quintana_Roo,_Mexico_-_Drugstore.jpg">
+    <meta property="og:url" content="https://www.facebook.com/MyCozumel/">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="container">  
+                <div class="menu-container">
+                    <ul class="menu">
+                        <li><a class="nav-link" href="homepage.html">Home</a></li>
+                        <li><a>Rentals</a></li>
+                        <li><img src="images/project_logo.png" alt="Scoots Logo" width="150" height="150"></li>
+                        <li><a class="nav-link" href="reservations.html">Reservations</a></li>
+                        <li><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+            <div id="logo-pic">
+                <img src="images/project_logo.png" alt="Scoots Logo" width="150" height="150">
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-rental">
+        <section id="rentals">
+            <h2>Rentals</h2>
+            <p>Explore Cozumel, Mexico on one of our vehicles for a fun and memorable experience! Whether you're cruising along the coastline on a scooter or venturing into the jungle with our ATVs, we have the perfect ride for your adventure.</p>
+            <div class="rental-image">
+                    <picture>
+                        <source srcset="images/buggy_small.webp" media="(max-width: 400px)">
+                        <source srcset="images/buggy_med.webp" media="(max-width: 800px)">
+                        <source srcset="images/buggy.webp" media="(max-width: 1024px)" >
+                        <img src="images/buggy.webp" alt="Buggy in Cozumel" width="1024" height="648" >
+                    </picture>
+            </div>
+            <div class="table-container">
+              <table id="rentalTable">
+                <thead>
+                  <tr>
+                    <th>Reservation</th>
+                    <th>Rental Type</th>
+                    <th>Max. Persons</th>
+                    <th>Half Day (3 hrs)</th>
+                    <th>Full Day</th>
+                  </tr>
+                </thead>
+                <tbody id="rentalTableBody">
+                  <!-- Data from JSON will be inserted here -->
+                </tbody>
+              </table>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer>
+       
+        <div class="contact-info">
+            <h4> Contact Us:</h4>
+            <p>123 Island Way, Cozumel, Mexico</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Email: info@scootscozumel.com</p>
+        </div>
+        
+        <div class="copyright"> 
+            <div class="social-media">
+            <a href="facebook.com"><img src="images/fb_icon.png" alt="Facebook"></a>
+            <a href="twitter.com"><img src="images/twitter.png" alt="Twitter"></a>
+        </div>
+            <p>&copy; 2024 Scoots Cozumel</p>
+            <p id="lastModified">Last modified: </p>
+        </div>
+
+       
+        
+        <img class="footer-logo" src="images/project_logo.png" alt="Footer Logo">
+    </footer>
+
+    <script src="scripts/hamburger_menu.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/modified_date.js"></script>
+    <script src="scripts/rental-table.js"></script>
+
+</body>
+</html>

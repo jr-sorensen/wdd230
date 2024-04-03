@@ -1,0 +1,215 @@
+@media only screen and (min-width: 700px) and (max-width: 1200px) {
+    /* Responsive adjustments for smaller screens */
+
+    /* General adjustments */
+    html {
+        font-size: 14px; /* Adjust base font size for smaller screens */
+    }
+
+    nav ul li {
+        margin-right: 20px;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        margin-left: 20px;
+        font-size: 14px;
+    }
+    /* Adjust hero section */
+    .hero-text h1 {
+        font-size: 36px; /* Decrease font size for smaller screens */
+    }
+
+    .hero-text p {
+        font-size: 16px; /* Decrease font size for smaller screens */
+    }
+
+    /* Adjust rental section */
+    .homepage #homepage-rentals h2 {
+        font-size: 40px; /* Decrease font size for smaller screens */
+    }
+
+    .homepage #homepage-rentals p {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    .homepage .rental-type {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    /* Adjust reservation and weather sections */
+    #homepage_reservation h2 {
+        font-size: 24px; /* Decrease font size for smaller screens */
+    }
+
+    #weather h2 {
+        font-size: 24px; /* Decrease font size for smaller screens */
+    }
+
+    
+
+    #homepage_reservation,
+    #weather {
+        flex: auto;
+        gap: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #homepage_reservation {
+        background-color: rgba(246, 174, 45, 0.1);
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+    }
+
+    #weather {
+        background-color: rgb(85, 221, 224, 0.1);
+    }
+
+    #current-weather {
+        background-color: rgba(85, 221, 224, 0.1);
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .forecast-item {
+        background-color: rgba(85, 221, 224, 0.1);
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    #forecast-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    ul {
+        flex: 1;
+        margin-bottom: 20px;
+    }
+
+    #homepage_reservation h2 {
+        color: black;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+
+    #weather h2 {
+        color: var(--charcoal);
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+
+    #homepage_reservation img {
+        display: block;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        border-radius: 10px;
+        border: 3px solid var(--orange-pantone);
+        margin: 10px auto;
+    }
+
+    #homepage_reservation p {
+        margin-bottom: 15px;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    ul{
+        flex:1;
+    }
+    /* Adjust footer */
+    .contact-info {
+        font-size: 14px; /* Decrease font size for smaller screens */
+    }
+
+    .copyright {
+        font-size: 0.7em; /* Decrease font size for smaller screens */
+    }
+
+    /* Adjust menu and hamburger */
+
+
+    /* Hamburger menu styles */
+    .hamburger {
+        display: none; /* Display hamburger icon for smaller screens */
+    }
+
+
+    /* Dropdown menu styles */
+    .dropdown-menu {
+        display: none; /* Hide dropdown menu by default for smaller screens */
+    }
+}
+
+/* Adjust flex layout for main sections */
+.homepage .main > section {
+    flex: 1 1 calc(100% - 40px); /* Each section takes up 1fr and has 20px margin */
+    margin: 20px;
+}
+
+/* Adjust font size for main sections */
+.homepage .main > section * {
+    font-size: 16px; /* Set font size for main sections */
+}
+
+
+/* Styles for the main-reserve section */
+#main-reserve {
+    display: flex;
+    flex-direction: column; /* Flex to 1 column */
+    align-items: center; /* Center items horizontally */
+}
+
+/* Styles for the rental-agreements section */
+#rental-agreements {
+    display: flex;
+    flex-direction: column; /* Flex to 1 column */
+    align-items: center; /* Center items horizontally */
+    width: 80%; /* Set width to 80% of the container */
+    margin-bottom: 20px; /* Add margin at the bottom */
+}
+
+/* Styles for the rental-form section */
+#rental-form {
+    display: flex;
+    flex-direction: column; /* Flex to 1 column */
+    align-items: center; /* Center items horizontally */
+    width: 80%; /* Set width to 80% of the container */
+}
+
+/* Styles for the boxes */
+.box {
+    border: 2px solid #ccc; /* Add border */
+    padding: 20px; /* Add padding */
+    border-radius: 10px; /* Add border radius */
+    margin-bottom: 20px; /* Add margin at the bottom */
+}
+
+/* Styles for the agreement list */
+.agreements-list {
+    list-style-type: none; /* Remove list bullet points */
+    padding: 0; /* Remove default padding */
+    text-align: left; /* Align text to the left */
+}
+
+/* Styles for the cozumel-sign image */
+.cozumel-sign img {
+    max-width: 100%; /* Set max width to 100% */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 20px; /* Add margin at the top */
+}
