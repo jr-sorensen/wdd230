@@ -5,3 +5,4 @@ let pageVisitCounter = localStorage.getItem('pageVisitCounter') || 0;
         localStorage.setItem('pageVisitCounter', pageVisitCounter);
 
         document.getElementById('visitCounter').innerText = pageVisitCounter;
+
