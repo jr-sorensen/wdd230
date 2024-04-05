@@ -340,6 +340,7 @@ section {
 
 #current-weather{
     font-size: 20px;
+    text-align: center;
     grid-column: span 3;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -354,7 +355,7 @@ section {
 }
 
 .forecast-item {
-    
+    background-color: rgba(85, 221, 224, 0.1);
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
