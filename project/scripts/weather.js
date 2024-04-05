@@ -54,19 +54,24 @@ function fetchForecastCurrentWeather() {
     .catch(error => console.log('Error fetching forecasted current weather data:', error));
 }
 
-// Function to fetch forecast data for the next 3 days
 function fetchForecastWeather() {
   fetch(apiForecastUrl)
     .then(response => response.json())
     .then(data => {
-      const currentDate = new Date();
+      const currentTime = new Date(); // Get current time
+      const currentDay = currentTime.getDate(); // Get current day
+      const currentHour = currentTime.getHours(); // Get current hour
+      const timezoneOffset = currentTime.getTimezoneOffset() * 60; // Get timezone offset in seconds
+
       const forecastItems = data.list.filter(item => {
-        const forecastDate = new Date(item.dt * 1000);
-        return forecastDate.getDate() !== currentDate.getDate(); // Exclude current day
+        const forecastDate = new Date((item.dt + timezoneOffset) * 1000); // Adjust forecast date with timezone offset
+        const forecastDay = forecastDate.getDate(); // Get forecast day
+        const forecastHour = forecastDate.getHours(); // Get forecast hour
+        return forecastDay !== currentDay && forecastHour === 15; // Filter by date and time (3:00 pm)
       }).slice(0, 3); // Limit to the next 3 days
 
       forecastItems.forEach((item, index) => {
-        const forecastDate = new Date(currentDate.getTime() + (24 * 60 * 60 * 1000) * (index + 1)); // Add 1 day for each index
+        const forecastDate = new Date((item.dt + timezoneOffset) * 1000); // Adjust forecast date with timezone offset
         const formattedDate = formatDate(forecastDate);
         const forecastHTML = `
           <div class="forecast-item">

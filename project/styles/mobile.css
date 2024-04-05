@@ -1,35 +1,29 @@
-/* Media query for screens up to 699px */
 @media only screen and (max-width: 699px) {
-    /* Font import */
-    @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Paytone+One&display=swap');
-
-    /* Font styles */
+    
     body {
         font-family: 'Nunito', sans-serif;
         background-color: rgba(51, 101, 138, 0.1);
-        font-size: 12px; /* Adjust base font size */
+        font-size: 12px; 
     }
 
     h1, h2, h3, h4, h5, h6 {
         font-family: 'Paytone One', sans-serif;
         text-align: center;
-        font-size: 15px; /* Adjust heading font size */
+        font-size: 15px; 
     }
 
-    /* Header styles */
     body {
         font-family: 'Nunito', sans-serif;
         background-color: rgba(51, 101, 138, 0.1);
-        font-size: 12px; /* Adjust base font size */
+        font-size: 12px; 
     }
 
     h1, h2, h3, h4, h5, h6 {
         font-family: 'Paytone One', sans-serif;
         text-align: center;
-        font-size: 15px; /* Adjust heading font size */
+        font-size: 15px; 
     }
 
-    /* Header styles */
     header {
         background-color: var(--charcoal);
         padding: 10px;
@@ -40,24 +34,22 @@
         border-bottom: 4px solid var(--bright-pink-crayola);
     }
 
-    /* Hamburger styles */
     .hamburger {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        width: 30px; /* Adjust width as needed */
-        height: 30px; /* Match height with logo */
+        width: 30px; 
+        height: 30px; 
         cursor: pointer;
-        margin-left: 20px; /* Adjust the left margin */
-    }
+        margin-left: 20px; 
 
-    /* Bar styles */
+    
     .bar {
         width: 100%;
         height: 2px;
-        background-color: white; /* Set the bar color */
-        margin: 2px 0; /* Adjust margin between bars */
+        background-color: white; 
+        margin: 2px 0; 
         transition: all 0.3s ease;
     }
 
@@ -73,27 +65,27 @@
         transform: translateY(-6px) rotate(-45deg);
     }
 
-/* Navigation logo styles */
+
 .header .logo {
-    float: left; /* Align the logo to the left */
+    float: left; 
 }
 
 .menu {
-    display: none; /* Hide the menu by default */
+    display: none; 
     position: absolute;
-    top: 70px; /* Adjust the distance from the top */
+    top: 70px;
     left: 0;
     width: 100%;
-    background-color:var(--charcoal); /* Set background color to white */
+    background-color:var(--charcoal);
     z-index: 1000;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Stack menu items vertically */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+    flex-direction: column; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
 }
 
 .menu.active {
-    display: flex; /* Show the menu when active */
+    display: flex; 
 }
 
 .menu ul {
@@ -109,35 +101,35 @@
     display: none;
 }
 
-/* Display the logo in the header */
+
 header {
     display: flex;
-    justify-content: space-between; /* Align items to the start and end */
-    align-items: center; /* Vertically center items */
+    justify-content: space-between; 
+    align-items: center; 
 }
 
 header .logo {
-    margin-right: 20px; /* Adjust margin for spacing */
+    margin-right: 20px; 
 }
 .menu a {
-    color: white; /* Set text color to black */
+    color: white; 
     text-decoration: none;
     font-size: 18px;
 }
 
     .hero-text h1 {
         position: absolute;
-        top: 20%; /* Position the text vertically centered */
-        left: 50%; /* Position the text horizontally centered */
-        transform: translate(-50%, -50%); /* Move the text up and left by 50% of its own width and height */
-        font-size: 24px; /* Adjust the font size for the hero text */
-        max-width: 80%; /* Set the maximum width of the hero text */
-        text-align: center; /* Center the text */
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+        top: 20%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        font-size: 24px; 
+        max-width: 80%; 
+        text-align: center; 
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
     }
 
     .hero-text p {
-        display: none; /* Decrease font size for smaller screens */
+        display: none; 
     }
 
     .main.homepage {
@@ -148,13 +140,13 @@ header .logo {
         justify-content: center;
     }
 
-    /* Individual section styles */
+    
     section {
         flex: 1 1 100%;
         margin-bottom: 10px;
     }
 
-    /* About section styles */
+    
     .homepage #about {
         padding: 10px;
         margin-inline: 15px;
@@ -162,7 +154,7 @@ header .logo {
         font-size: 12px;
     }
 
-    /* Rentals section styles */
+    
     .homepage #homepage-rentals {
         display: flex;
         flex-direction: column;
@@ -206,7 +198,7 @@ header .logo {
         gap: 10px;
     }
 
-    /* Rental image styles */
+   
     .homepage .rental-type picture {
         flex: 1;
         display: flex;
@@ -219,9 +211,6 @@ header .logo {
         max-height: 100%;
         height: auto;
     }
-
- 
-
 
     #homepage_reservation,
     #weather {
@@ -303,7 +292,6 @@ header .logo {
         font-size: 12px;
     }
 
-    /* Map Box */
     #map .map-grid {
         display: grid;
         grid: auto;
@@ -369,6 +357,4 @@ header .logo {
     margin-top: 10px; 
     font-size: 0.8em; 
 }
-}
-
-
+    }}
