@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Fetching data from JSON file
+    
     fetch('data/rental-info.json')
       .then(response => response.json())
       .then(data => {
         const rentals = data.max_rental_pricing;
   
-        // Reference to the table body
+        
         const tableBody = document.getElementById('rentalTableBody');
   
-        // Populating table with rental data
+        
         rentals.forEach(rental => {
           const row = document.createElement('tr');
   
