@@ -278,7 +278,7 @@ section {
 
 /* Stylize the heading within reservation and weather sections */
 #homepage_reservation h2 {
-    color: var(--orange-pantone);
+    color: rgb(86, 18, 7);
     margin-bottom: 20px;
     font-size: 36px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
@@ -361,7 +361,7 @@ section {
     border-radius: 5px;
     padding: 10px;
     text-align: center;
-    grid-column: 1fr;
+    grid-column: span 1;
     margin-right: 5px; 
     margin-bottom: 5px; 
 }
@@ -697,7 +697,7 @@ input[type="submit"]:hover {
     padding: 15px;
     text-align: center;
     position: fixed;
-    top: 2;
+    top: 2px;
     left: 50%;
     transform: translateX(-50%);
     width: 80%; /* Adjust the width as needed */
