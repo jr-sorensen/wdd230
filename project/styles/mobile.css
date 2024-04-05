@@ -296,8 +296,7 @@ header .logo {
 
     #map .map-grid {
         display: grid;
-        grid: auto;
-        flex-wrap: wrap;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust min and max width as needed */
         gap: 20px;
     }
     
