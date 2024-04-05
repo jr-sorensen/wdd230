@@ -26,6 +26,8 @@ header {
     padding: 10px;  
     border-top: 4px solid var(--hunyadi-yellow);
     border-bottom: 4px solid var(--bright-pink-crayola);
+    justify-content: center;
+    align-items: center;
 }
 
 nav {
@@ -66,18 +68,27 @@ nav ul li a:hover {
 
 .menu-container {
     display: flex;
+    justify-content: center;
     align-items: center;
+    padding: 10px; /* Add padding if needed */
 }
 
 .menu {
-    list-style: none;
+    list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    align-items: center;
 }
 
 .menu li {
     display: inline-block;
     margin-right: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
 }
 
 .hamburger {
@@ -439,11 +450,6 @@ ul {
 }
 
 
-#main-reserve {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 
 .agreements-list {
@@ -548,7 +554,9 @@ ul {
 
 #rental-form input[type="submit"]:hover {
     background-color: #0056b3;
-}.cozumel-sign {
+}
+
+.cozumel-sign {
     margin-top: 20px; 
     text-align: center; 
 }

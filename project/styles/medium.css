@@ -1,9 +1,7 @@
 @media only screen and (min-width: 700px) and (max-width: 1200px) {
-    /* Responsive adjustments for smaller screens */
-
-    /* General adjustments */
+    
     html {
-        font-size: 14px; /* Adjust base font size for smaller screens */
+        font-size: 14px; 
     }
 
     nav ul li {
@@ -16,35 +14,35 @@
         margin-left: 20px;
         font-size: 14px;
     }
-    /* Adjust hero section */
+    
     .hero-text h1 {
-        font-size: 36px; /* Decrease font size for smaller screens */
+        font-size: 36px; 
     }
 
     .hero-text p {
-        font-size: 16px; /* Decrease font size for smaller screens */
+        font-size: 16px; 
     }
 
-    /* Adjust rental section */
+    
     .homepage #homepage-rentals h2 {
-        font-size: 40px; /* Decrease font size for smaller screens */
+        font-size: 40px; /
     }
 
     .homepage #homepage-rentals p {
-        font-size: 16px; /* Adjust font size for smaller screens */
+        font-size: 16px; 
     }
 
     .homepage .rental-type {
-        padding: 15px; /* Adjust padding for smaller screens */
+        padding: 15px; 
     }
 
-    /* Adjust reservation and weather sections */
+    
     #homepage_reservation h2 {
-        font-size: 24px; /* Decrease font size for smaller screens */
+        font-size: 24px; 
     }
 
     #weather h2 {
-        font-size: 24px; /* Decrease font size for smaller screens */
+        font-size: 24px; 
     }
 
     
@@ -132,84 +130,81 @@
     ul{
         flex:1;
     }
-    /* Adjust footer */
+
     .contact-info {
-        font-size: 14px; /* Decrease font size for smaller screens */
+        font-size: 14px; 
     }
 
     .copyright {
-        font-size: 0.7em; /* Decrease font size for smaller screens */
+        font-size: 0.7em; 
     }
 
-    /* Adjust menu and hamburger */
 
-
-    /* Hamburger menu styles */
     .hamburger {
-        display: none; /* Display hamburger icon for smaller screens */
+        display: none; 
     }
 
 
-    /* Dropdown menu styles */
+    
     .dropdown-menu {
-        display: none; /* Hide dropdown menu by default for smaller screens */
+        display: none; 
     }
-}
 
-/* Adjust flex layout for main sections */
+
+
 .homepage .main > section {
-    flex: 1 1 calc(100% - 40px); /* Each section takes up 1fr and has 20px margin */
+    flex: 1 1 calc(100% - 40px); 
     margin: 20px;
 }
 
-/* Adjust font size for main sections */
+
 .homepage .main > section * {
-    font-size: 16px; /* Set font size for main sections */
+    font-size: 16px; 
 }
 
 
-/* Styles for the main-reserve section */
+
 #main-reserve {
     display: flex;
-    flex-direction: column; /* Flex to 1 column */
-    align-items: center; /* Center items horizontally */
+    flex-direction: column; 
+    align-items: center; 
 }
 
-/* Styles for the rental-agreements section */
+
 #rental-agreements {
     display: flex;
-    flex-direction: column; /* Flex to 1 column */
-    align-items: center; /* Center items horizontally */
-    width: 80%; /* Set width to 80% of the container */
-    margin-bottom: 20px; /* Add margin at the bottom */
+    flex-direction: column; 
+    align-items: center; 
+    width: 80%; 
+    margin-bottom: 20px; 
 }
 
-/* Styles for the rental-form section */
+
 #rental-form {
     display: flex;
-    flex-direction: column; /* Flex to 1 column */
-    align-items: center; /* Center items horizontally */
-    width: 80%; /* Set width to 80% of the container */
+    flex-direction: column; 
+    align-items: center; 
+    width: 80%;
 }
 
-/* Styles for the boxes */
+
 .box {
-    border: 2px solid #ccc; /* Add border */
-    padding: 20px; /* Add padding */
-    border-radius: 10px; /* Add border radius */
-    margin-bottom: 20px; /* Add margin at the bottom */
+    border: 2px solid #ccc; 
+    padding: 20px; 
+    border-radius: 10px; 
+    margin-bottom: 20px; 
 }
 
-/* Styles for the agreement list */
+
 .agreements-list {
-    list-style-type: none; /* Remove list bullet points */
-    padding: 0; /* Remove default padding */
-    text-align: left; /* Align text to the left */
+    list-style-type: none; 
+    padding: 0; 
+    text-align: left; 
 }
 
-/* Styles for the cozumel-sign image */
+
 .cozumel-sign img {
-    max-width: 100%; /* Set max width to 100% */
-    height: auto; /* Maintain aspect ratio */
-    margin-top: 20px; /* Add margin at the top */
-}
+    max-width: 100%; 
+    height: auto; 
+    margin-top: 20px; 
+}}
