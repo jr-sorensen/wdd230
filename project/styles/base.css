@@ -692,10 +692,11 @@ input[type="submit"]:hover {
 }
 
 .temperature-message {
-    background-color: rgb(75, 8, 1); /* Red */
-    color: white;
+    background-color: var(--orange-pantone); /* Red */
+    color: black;
     padding: 15px;
     text-align: center;
+    
     position: fixed;
     top: 2px;
     left: 50%;
