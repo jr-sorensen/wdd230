@@ -44,6 +44,8 @@
         cursor: pointer;
         margin-left: 20px; 
 
+    }
+
     
     .bar {
         width: 100%;
@@ -357,4 +359,4 @@ header .logo {
     margin-top: 10px; 
     font-size: 0.8em; 
 }
-    }}
+    }
