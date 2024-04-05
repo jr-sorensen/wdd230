@@ -1,7 +1,5 @@
-/* Font import */
 @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Paytone+One&display=swap');
 
-/* Font styles */
 body {width:100%;
     font-family: 'Nunito', sans-serif;
     background-color: rgba(51, 101, 138, 0.1);
@@ -12,7 +10,6 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-/* Color variables */
 :root {
     --robin-egg-blue: rgb(85, 221, 224);
     --lapis-lazuli: #33658aff;
@@ -24,7 +21,6 @@ h1, h2, h3, h4, h5, h6 {
     --bright-pink-crayola: rgb(255, 56, 109);
 }
 
-/* Header styles */
 header {
     background-color: var(--charcoal);
     padding: 10px;  
@@ -84,9 +80,8 @@ nav ul li a:hover {
     margin-right: 20px;
 }
 
-/* Hamburger menu styles */
 .hamburger {
-    display: none; /* Hide by default */
+    display: none; 
     cursor: pointer;
 }
 
@@ -101,7 +96,7 @@ nav ul li a:hover {
 #logo-pic img{
     display: none;
 }
-/* Rotate animation for bars */
+
 .change .bar:nth-child(1) {
     transform: rotate(-45deg) translate(-5px, 6px);
 }
@@ -114,7 +109,6 @@ nav ul li a:hover {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/* Dropdown menu styles */
 .dropdown-menu {
     display: none;
 }
@@ -161,13 +155,11 @@ nav ul li a:hover {
     flex-wrap: wrap;
 }
 
-/* Individual section styles */
 section {
     flex: 1 1 100%;
     margin-bottom: 20px;
 }
 
-/* About section styles */
 .homepage #about {
     padding: 20px;
     margin-inline: 30px;
@@ -175,7 +167,6 @@ section {
     font-size: 16px;
 }
 
-/* Rentals section styles */
 .homepage #homepage-rentals {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -194,9 +185,9 @@ section {
 }
 
 .homepage #homepage-rentals button:hover {
-    background-color: var(--bright-pink-crayola); /* Darker shade of orange */
+    background-color: var(--bright-pink-crayola); 
     color: black;
-    transform: scale(1.05); /* Slightly increase button size on hover */
+    transform: scale(1.05); 
 }
 
 .homepage #homepage-rentals h2,  #homepage-rentals p {
@@ -228,7 +219,6 @@ section {
     flex-direction: column;
 }
 
-/* Rental image styles */
 .homepage .rental-type picture {
     flex: 1;
     display: flex;
@@ -242,8 +232,7 @@ section {
 }
 
 
-/* Weather and Reservation section styles */
-/* Stylize the call-weather section */
+
 #call-weather {
     display: flex;
     flex-wrap: wrap;
@@ -272,11 +261,10 @@ section {
 #weather {
     background-color: rgb(85, 221, 224, .1);
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Adjust column count for 3 forecasts */
-    gap: 20px; /* Add gap between forecast items */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
 }
 
-/* Stylize the heading within reservation and weather sections */
 #homepage_reservation h2 {
     color: rgb(86, 18, 7);
     margin-bottom: 20px;
@@ -293,15 +281,15 @@ section {
 
 }
 
-/* Stylize the image within the reservation section */
+
 #homepage_reservation img {
     display: block;
     width: 100%;
-    max-width: 500px; /* Limit the image width */
+    max-width: 500px; 
     height: auto;
     border-radius: 10px;
     border: 5px solid var(--orange-pantone);
-    margin: 20px auto; /* Center the image */
+    margin: 20px auto; 
 }
 
 #homepage_reservation p {
@@ -311,7 +299,6 @@ section {
     font-weight: bold;
 }
 
-/* Stylize the paragraph within reservation and weather sections */
 #weather p {
     margin-bottom: 15px;
 }
@@ -329,8 +316,8 @@ section {
 }
 
 #homepage_reservation button:hover {
-    background-color: #f26419ff; /* Darker shade of orange */
-    transform: scale(1.05); /* Slightly increase button size on hover */
+    background-color: #f26419ff; 
+    transform: scale(1.05); 
 }
 
 #current-date {
@@ -371,23 +358,20 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     flex-wrap: wrap;
-    justify-content: space-between; /* Distribute items evenly across the container */
+    justify-content: space-between; 
 }
 
 ul {
-    list-style: none; /* Remove default list styles */
-    margin-bottom: 20px; /* Add spacing between forecast items */
+    list-style: none; 
+    margin-bottom: 20px; 
 }
 
 
-/*Main rental styles*/
 
-/* Main Styles */
 #main-rental {
     padding: 20px;
 }
 
-/* Rentals Section */
 #rentals {
     margin-top: 50px;
 }
@@ -415,12 +399,12 @@ ul {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Increased shadow */
-    transition: transform 0.3s ease; /* Smooth transition */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease; 
 }
 
 .rental-image img:hover {
-    transform: scale(1.05); /* Enlarge image on hover */
+    transform: scale(1.05); 
 }
 
 .table-container {
@@ -454,55 +438,49 @@ ul {
     background-color: #f2f2f2;
 }
 
-/*Reservation styles*/
 
-/* Global styles */
-
-/* Main container styles */
 #main-reserve {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* Rental agreements section styles */
+
 .agreements-list {
-    list-style-type: none; /* Remove default list styles */
-    padding: 0; /* Remove default padding */
+    list-style-type: none; 
+    padding: 0;
 }
 
 .agreements-list li {
-    margin-bottom: 10px; /* Add space between list items */
-    padding-left: 20px; /* Add left padding for bullet point */
-    position: relative; /* Position list items relatively */
+    margin-bottom: 10px; 
+    padding-left: 20px; 
+    position: relative; 
 }
 
 .agreements-list li::before {
-    content: "\2022"; /* Add bullet point */
-    color: var(--charcoal); /* Set bullet point color */
-    font-size: 16px; /* Adjust bullet point size */
-    position: absolute; /* Position bullet point absolutely */
-    left: 0; /* Align bullet point to the left */
-    top: 5px; /* Adjust vertical position */
+    content: "\2022"; 
+    color: var(--charcoal); 
+    font-size: 16px; 
+    position: absolute; 
+    left: 0; 
+    top: 5px; 
 }
 /* Rental form section styles */
 
-/* Main container styles */
 #main-reserve {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     align-items: center;
     justify-content: center;
-    margin: 0 auto; /* Center the main container horizontally */
-    max-width: 1200px; /* Limit the width of the main container */
+    margin: 0 auto; 
+    max-width: 1200px; 
 }
 #main-reserve h1{
     grid-column: span 2;
     
 }
 
-/* Box styles */
 .box {
     padding: 20px;
     border: 1px solid #ccc;
@@ -519,7 +497,7 @@ ul {
 
 #rental-agreements ul {
     padding-left: 20px;
-    font-size: 18px; /* Increase font size */
+    font-size: 18px; 
 }
 
 /* Rental form section styles */
@@ -531,7 +509,7 @@ ul {
 }
 #rental-form form {
     width: 100%;
-    max-width: 400px; /* Limit the width of the form */
+    max-width: 400px; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -557,7 +535,7 @@ ul {
 
 #rental-form input[type="submit"] {
     width: 100%;
-    max-width: 200px; /* Limit the width of the submit button */
+    max-width: 200px; 
     margin-top: 10px;
     padding: 10px;
     background-color: #007bff;
@@ -571,15 +549,15 @@ ul {
 #rental-form input[type="submit"]:hover {
     background-color: #0056b3;
 }.cozumel-sign {
-    margin-top: 20px; /* Add margin to separate image from text */
-    text-align: center; /* Center the image horizontally */
+    margin-top: 20px; 
+    text-align: center; 
 }
 
 .cozumel-sign img {
-    max-width: 100%; /* Make sure the image doesn't overflow its container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Add border radius for rounded corners */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
 }
 
 /*Contact styles*/
@@ -588,8 +566,6 @@ ul {
     text-align: center;
 }
 
-
-/* Contact Info Box */
 #contact-info {
     background-color: rgb(255, 56, 109,.15);
     border-radius: 10px;
@@ -597,7 +573,7 @@ ul {
     margin-bottom: 20px;
 }
 
-/* Map Box */
+
 #map {
     background-color: rgb(246, 174, 45,.15); 
     border-radius: 10px;
@@ -605,7 +581,7 @@ ul {
     margin-bottom: 20px;
 }
 
-/* Contact Form Box */
+
 #contact-form {
     background-color: rgb(85, 221, 224,.15);
     border-radius: 10px;
@@ -617,12 +593,12 @@ ul {
 form {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center items horizontally */
+    align-items: center; 
 }
 
 label {
     margin-bottom: 10px;
-    text-align: center; /* Center labels */
+    text-align: center; 
 }
 
 input[type="text"],
@@ -633,7 +609,7 @@ textarea {
     border-radius: 5px;
     border: 1px solid #ccc;
     width: 250px;
-    box-sizing: border-box; /* Include padding and border in width */
+    box-sizing: border-box; 
 }
 
 input[type="submit"] {
@@ -658,27 +634,25 @@ input[type="submit"]:hover {
 }
 
 .map-container {
-    flex: 1 1 45%; /* Adjust width as needed */
+    flex: 1 1 45%; 
 }
 
 .map-container iframe {
     width: 100%;
-    height: 300px; /* Adjust height as needed */
+    height: 300px;
     border: none;
 }
 
 /*Thank you page*/
-/* Center the thank-you section content */
+
 #thank-you {
     text-align: center;
 }
 
-/* Style the return button */
 .return-button {
     display: inline-block;
     padding: 15px 30px;
-    background-color: var(--lapis-lazuli); /* Green */
-    color: white;
+    background-color: var(--lapis-lazuli); 
     text-decoration: none;
     border: none;
     border-radius: 5px;
@@ -688,22 +662,22 @@ input[type="submit"]:hover {
 }
 
 .return-button:hover {
-    background-color: var(--charcoal); /* Darker green */
+    background-color: var(--charcoal); 
 }
 
 .temperature-message {
-    background-color: var(--orange-pantone); /* Red */
+    background-color: var(--hunyadi-yellow); 
     color: black;
     padding: 15px;
     text-align: center;
-    
+    font-weight: bold;
     position: fixed;
     top: 2px;
     left: 50%;
     transform: translateX(-50%);
-    width: 80%; /* Adjust the width as needed */
+    width: 80%;
     z-index: 9999;
-    display: none; /* Hide by default */
+    display: none;
 }
 
 .close-button {
